@@ -1,19 +1,9 @@
-# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
+# Cinuru Website
 
-## Install dependencies
+Code of the Cinuru [website](http://cinuru.com).
 
-```sh
-npm install
-```
+The website is build with [Phenomic](https://github.com/MoOx/phenomic), a static site generator based on [React](https://facebook.github.io/react/) components. Styles are written with [styled-components](http://styled-components.com/).
 
-## Run development server
+Dependencies are manages with [yarn](http://yarnpkg.com/) (or `npm`). To install the dependencies, simply run `yarn install`. To start a development server with life reloading, run `yarn start`.
 
-```sh
-npm start
-```
-
-## Build for production
-
-```sh
-npm run build
-```
+To deploy, simply run `yarn deploy`.
