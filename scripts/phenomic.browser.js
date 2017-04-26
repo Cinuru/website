@@ -17,17 +17,17 @@ mdContext.keys().forEach(mdContext)
 // hot loading
 if (module.hot) {
 
-  // hot load md
-  module.hot.accept(mdContext.id, () => {
-    mdContext = require.context("../content", true, /\.(md|markdown)$/)
-    const mdHotUpdater = require("phenomic/lib/client/hot-md").default
-    const requireUpdate = mdHotUpdater(mdContext, window.__COLLECTION__, store)
-    mdContext.keys().forEach(requireUpdate)
-  })
+    // hot load md
+    module.hot.accept(mdContext.id, () => {
+        mdContext = require.context("../content", true, /\.(md|markdown)$/)
+        const mdHotUpdater = require("phenomic/lib/client/hot-md").default
+        const requireUpdate = mdHotUpdater(mdContext, window.__COLLECTION__, store)
+        mdContext.keys().forEach(requireUpdate)
+    })
 
-  // hot load app
-  module.hot.accept(
-    [ "../src/metadata.js", "../src/routes.js", "../src/store.js" ],
-    () => phenomicClient({ metadata, routes, store })
-  )
+    // hot load app
+    module.hot.accept(
+        [ "../src/metadata.js", "../src/routes.js", "../src/store.js" ],
+        () => phenomicClient({ metadata, routes, store })
+    )
 }

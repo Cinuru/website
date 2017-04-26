@@ -1,9 +1,9 @@
 import React, { PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
-import PagesList from "../../components/PagesList"
+import PagesList from "./PagesList"
 
-import styles from "./index.css"
+import styles from "./LatestPosts.css"
 
 const defaultNumberOfPosts = 6
 

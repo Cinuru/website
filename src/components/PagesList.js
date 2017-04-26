@@ -1,8 +1,8 @@
 import React, { PropTypes } from "react"
 
-import PagePreview from "../PagePreview"
+import PagePreview from "./PagePreview"
 
-import styles from "./index.css"
+import styles from "./PagesList.css"
 
 const PagesList = ({ pages }) => {
   return (
