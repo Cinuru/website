@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react'
+import PropTypes from 'proptypes'
 import styled from 'styled-components'
 import { Link } from "phenomic"
 
@@ -12,9 +13,7 @@ const Wrapper = styled.header`
     position: fixed;
     width: 100%;
     font-size: 0.9rem;
-    &.scrolled {
-        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
-    }
+    ${props => props.scrolled ? 'box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);' : ''}
     .container {
         max-width: 50rem;
         margin: 0 auto;
@@ -59,24 +58,50 @@ const Wrapper = styled.header`
     }
 `
 
-const Header = () => (
-    <Wrapper>
-        <div className="container">
-            <span className="logo">
-                <Link to="/">Cinuru Research</Link>
-            </span>
-            <nav>
-                <ul>
-                    <li className="active">
-                        <Link to="about">Über Uns</Link>
-                    </li>
-                    <li>
-                        <a href="mailto:contact@cinuru.com">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </Wrapper>
-)
+class Header extends React.Component {
+    constructor(props) {
+        super(props)
+        const scrollPostition = window.pageYOffset | document.body.scrollTop
+        this.state = {scrolled: scrollPostition !== 0}
+        this.handleScroll = this.handleScroll.bind(this)
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll)
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll)
+    }
+    handleScroll() {
+        const scrollPostition = window.pageYOffset | document.body.scrollTop
+        this.setState({scrolled: scrollPostition !== 0})
+    }
+    render() {
+        const { route } = this.props
+        const { scrolled } = this.state
+        return (
+            <Wrapper scrolled={scrolled}>
+                <div className="container">
+                    <span className="logo">
+                        <Link to="/">Cinuru Research</Link>
+                    </span>
+                    <nav>
+                        <ul>
+                            <li className={route === '/about/' ? 'active' : ''}>
+                                <Link to="about">Über Uns</Link>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@cinuru.com">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </Wrapper>
+        )
+    }
+}
+
+Header.propTypes = {
+    route: PropTypes.string
+}
 
 export default Header
