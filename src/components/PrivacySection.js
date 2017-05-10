@@ -26,7 +26,7 @@ const Styles = styled.section`
     }
 `
 
-export default () => (
+const PrivacySection = () => (
     <Styles>
         <img src="assets/privacy.svg" alt="privacy"/>
         <h1>Beziehungen erfordern Vertrauen</h1>
@@ -34,3 +34,5 @@ export default () => (
         <h3>Cinuru steht für eine vertrauensvolle Beziehung zwischen Kino und Besucher. </h3>
     </Styles>
 )
+
+export default PrivacySection

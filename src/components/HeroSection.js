@@ -55,7 +55,7 @@ const Styles = styled.section`
     }
 `
 
-export default () => (
+const HeroSection = () => (
     <Styles>
         <h1>Wer ist dieses Publikum, von dem alle reden?</h1>
         <div className="image">
@@ -69,3 +69,5 @@ export default () => (
         </div>
     </Styles>
 )
+
+export default HeroSection

@@ -101,7 +101,7 @@ const Styles = styled.section`
     }
 `
 
-export default () => (
+const ProductSection = () => (
     <Styles>
         <div className="container">
             <h1>Machen Sie Ihre Besucher zu Kinofreunden</h1>
@@ -117,3 +117,5 @@ export default () => (
         </div>
     </Styles>
 )
+
+export default ProductSection

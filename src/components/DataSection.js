@@ -89,8 +89,8 @@ const Styles = styled.section`
     }
 `
 
-export default () => (
-    <Styles>
+const DataSection = () => (
+    <Styles id="data">
         <h1>Datenbasiertes Customer Relationship Management für Kinos</h1>
         <div className="image">
             <img src="assets/data.svg" alt="data-cycle"/>
@@ -100,3 +100,5 @@ export default () => (
         <h3>Wir helfen Ihnen die Daten auszuwerten und so mit Ihren Besuchern in Kontakt zu treten.</h3>
     </Styles>
 )
+
+export default DataSection

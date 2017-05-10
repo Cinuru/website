@@ -6,11 +6,11 @@ import HeadMeta from '../components/HeadMeta'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const Container = ({head, children}) => (
+const Container = ({head, children, __url}) => (
     <div>
         <HeadMeta/>
         <Helmet title={`Cinuru | ${head.title}`}/>
-        <Header/>
+        <Header route={__url}/>
         {children}
         <Footer/>
     </div>
@@ -18,11 +18,8 @@ const Container = ({head, children}) => (
 
 Container.propTypes = {
     children: PropTypes.node,
-    isLoading: PropTypes.bool,
     head: PropTypes.object.isRequired,
-    body: PropTypes.string,
-    header: PropTypes.element,
-    footer: PropTypes.element,
+    __url: PropTypes.string
 }
 
 export default Container

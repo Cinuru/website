@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import Container from './Container'
@@ -9,6 +10,7 @@ import DataSection from '../components/DataSection'
 import PrivacySection from '../components/PrivacySection'
 
 import Button from '../components/Button'
+import Loading from '../components/Loading'
 import { gold } from '../components/styles'
 
 const Styles = styled.main`
@@ -24,8 +26,8 @@ const Styles = styled.main`
     }
 `
 
-const HomePage = ({head, isLoading}) => (
-    <Container {...{head}}>
+const HomePage = ({isLoading, ...props}) => (
+    <Container {...props}>
         {isLoading ? (
             <Loading />
         ) : (
@@ -41,5 +43,9 @@ const HomePage = ({head, isLoading}) => (
         )}
     </Container>
 )
+
+HomePage.propTypes = {
+    isLoading: PropTypes.bool
+}
 
 export default HomePage
