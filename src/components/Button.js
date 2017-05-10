@@ -1,30 +1,41 @@
-import React, { PropTypes } from "react"
-import cx from "classnames"
+import React from "react"
+import PropTypes from 'proptypes'
+import styled from 'styled-components'
+import { transparentize } from 'polished'
 
-import styles from "./Button.css"
+import { silver, gray } from './styles'
 
-const Button = ({ className, secondary, light, big, ...otherProps }) => (
-  <span
-    role="button"
-    { ...otherProps }
-    className={ cx({
-      [className]: className,
-      [styles.button]: true,
-      [styles.secondary]: secondary,
-      [styles.light]: light,
-      [styles.big]: big,
-    }) }
-  />
+const Wrapper = styled.a`
+    display: inline-block;
+    margin: 1rem auto;
+    background: ${props => props.color};
+    color: ${gray};
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0.125rem 0.125rem 2rem ${props => transparentize(0.2, props.color)}
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0.125rem 0.125rem 2.5rem ${props => transparentize(0.2, props.color)}
+    }
+    @media(max-width: 500px) {
+        font-size: 1.3rem;
+    }
+`
+
+const Button = ({href, color, children}) => (
+    <Wrapper color={color} href={href}>{children}</Wrapper>
 )
 
 Button.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  secondary: PropTypes.bool,
-  light: PropTypes.bool,
-  big: PropTypes.bool,
+    href: PropTypes.string,
+    color: PropTypes.string,
+    children: PropTypes.string
 }
 
-Button.displayName = "Button"
+Button.defaultProps = {
+    color: silver
+}
 
 export default Button

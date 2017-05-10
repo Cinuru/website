@@ -6,7 +6,7 @@ import { BodyContainer } from 'phenomic'
 import Loading from '../components/Loading'
 import Container from './Container'
 
-const Page = ({isLoading, head, body}) => {
+const AboutPage = ({isLoading, head, body}) => {
     return (
         <Container {...{head}}>
             {isLoading ? (
@@ -18,10 +18,10 @@ const Page = ({isLoading, head, body}) => {
     )
 }
 
-Page.propTypes = {
+AboutPage.propTypes = {
     isLoading: PropTypes.bool,
     head: PropTypes.object,
     body: PropTypes.string
 }
 
-export default Page
+export default AboutPage

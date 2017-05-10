@@ -1,5 +1,9 @@
 # Cinuru Website
 
+This is the website of Cinuru Research. It is life at [cinuru.com](http://cinuru.com)
+
+## Development
+
 Code of the Cinuru [website](http://cinuru.com).
 
 The website is build with [Phenomic](https://github.com/MoOx/phenomic), a static site generator based on [React](https://facebook.github.io/react/) components. Styles are written with [styled-components](http://styled-components.com/).
