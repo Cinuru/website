@@ -26,7 +26,7 @@ const Styles = styled.span`
 
 const Button = ({href, color, children}) => (
     <a href={href}>
-        <Styles color={color} onClick={() => console.log('clicked', href)}>
+        <Styles color={color}>
             {children}
         </Styles>
     </a>
