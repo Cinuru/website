@@ -60,7 +60,7 @@ const Styles = styled.div`
 
 const AboutPage = (props) => (
     <Styles>
-        <Page {...props}/>
+        <Page { ...props }/>
     </Styles>
 )
 

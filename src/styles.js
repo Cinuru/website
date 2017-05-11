@@ -5,6 +5,9 @@ import styled, { injectGlobal } from 'styled-components'
 import styleSheet from 'styled-components/lib/models/StyleSheet'
 
 injectGlobal`
+    @-ms-viewport {
+        width: device-width;
+    }
     html, body {
         background: white;
         font-family: Lato;
@@ -23,16 +26,13 @@ injectGlobal`
             font-size: 12px;
         }
     }
-
     * {
         box-sizing: border-box;
     }
-
     img {
         width: 100%;
         vertical-align: top;
     }
-
     a {
         color: inherit;
         text-decoration: none;
@@ -84,13 +84,16 @@ const Styles = styled.div`
 
 const StylesContainer = ({children}) => (
     <Styles>
+        <Helmet>
+            <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet"/>
+            <meta name='viewport' content='width=device-width, initial-scale=1'/>
+            {typeof window === 'undefined' && (
+                <style type="text/css">
+                    {styleSheet.rules().map(rule => rule.cssText).join('\n')}
+                </style>
+            )}
+        </Helmet>
         {children}
-        {typeof window === 'undefined' && (
-            <Helmet style={[{
-                type: 'text/css',
-                cssText: styleSheet.rules().map(rule => rule.cssText).join('\n')
-            }]}/>
-        )}
     </Styles>
 )
 

@@ -1,43 +1,25 @@
 import React from 'react'
 import PropTypes from 'proptypes'
-import styled from 'styled-components'
 import { BodyContainer } from 'phenomic'
 
-import Loading from '../components/Loading'
-import Article from '../components/Article'
 import Container from './Container'
 
-const Styles = styled.main`
-    padding: 5.5rem 0;
-    min-height: 90vh;
-    @media(max-width: 420px) {
-        padding: 3.5rem 0;
-    }
-    .phenomic-HeadingAnchor {
-        display: none;
-    }
-`
+import Article from '../components/Article'
 
-const Page = ({isLoading, body, head, ...props}) => {
-    return (
-        <Container { ...{head, ...props} }>
-            {isLoading ? (
-                <Loading />
-            ) : (
-                <Styles>
-                    <Article title={head.title} heroImg={head.heroImg}>
-                        <BodyContainer>{body}</BodyContainer>
-                    </Article>
-                </Styles>
-            )}
-        </Container>
-    )
-}
+const Page = (props) => (
+    <Container { ...props }>
+        <Article title={props.head.title} heroImg={props.head.heroImg}>
+            <BodyContainer>
+                {props.isLoading ? '' : props.body}
+            </BodyContainer>
+        </Article>
+    </Container>
+)
 
 Page.propTypes = {
-    isLoading: PropTypes.bool,
     head: PropTypes.object,
-    body: PropTypes.string
+    body: PropTypes.string,
+    isLoading: PropTypes.bool
 }
 
 export default Page

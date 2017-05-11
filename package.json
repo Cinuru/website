@@ -1,16 +1,11 @@
 {
-  "private": true,
   "name": "cinuru-website",
   "homepage": "http://cinuru.com",
-  "repository": "https://github.com/cinuru/website.git",
+  "repository": "https://github.com/Cinuru/website.git",
   "scripts": {
-    "lint:js": "eslint --ignore-path .gitignore --fix .",
-    "lint:css": "stylelint \"src/**/*.css\"",
-    "lint": "npm-run-all --parallel lint:*",
+    "lint": "eslint --ignore-path .gitignore --fix .",
     "start": "phenomic start",
-    "build": "phenomic build",
-    "pretest": "npm run lint",
-    "test": "npm run build"
+    "build": "phenomic build"
   },
   "phenomic": {
     "CNAME": true
@@ -48,7 +43,7 @@
     "raw-loader": "^0.5.1",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "react-helmet": "^3.0.0",
+    "react-helmet": "^5.0.3",
     "react-hot-loader": "^3.0.0-beta",
     "react-redux": "^4.0.0",
     "react-router": "^2.3.0",

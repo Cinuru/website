@@ -85,6 +85,8 @@ const Article = ({title, heroImg, children}) => (
 )
 
 Article.propTypes = {
+    title: PropTypes.string.isRequired,
+    heroImg: PropTypes.string,
     children: PropTypes.element
 }
 
