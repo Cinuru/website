@@ -55,7 +55,7 @@ const Footer = () => (
                 <ul>
                     <li><Link to="/">Startseite</Link></li>
                     <li><Link to="/about">Über Uns</Link></li>
-                    <li><a href="mailto:contact@cinuru.com">Kontakt</a></li>
+                    <li><Link to="/contact">Kontakt</Link></li>
                     <li><Link to="/impressum">Impressum</Link></li>
                 </ul>
             </div>

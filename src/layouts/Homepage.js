@@ -10,11 +10,13 @@ import ContactSection from '../components/ContactSection'
 
 const HomePage = (props) => (
     <Container { ...props }>
-        <HeroSection/>
-        <ProductSection/>
-        <DataSection/>
-        <PrivacySection/>
-        <ContactSection/>
+        <div>
+            <HeroSection/>
+            <ProductSection/>
+            <DataSection/>
+            <PrivacySection/>
+            <ContactSection/>
+        </div>
     </Container>
 )
 
