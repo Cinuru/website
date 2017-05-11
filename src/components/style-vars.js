@@ -8,7 +8,7 @@ export const darkgray = '#999'
 
 // mixins
 export const clearfix = css`
-    &:after {
+    &::after {
         visibility: hidden;
         display: block;
         font-size: 0;

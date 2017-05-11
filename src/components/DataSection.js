@@ -93,7 +93,7 @@ const DataSection = () => (
     <Styles id="data">
         <h1>Datenbasiertes Customer Relationship Management für Kinos</h1>
         <div className="image">
-            <img src="assets/data.svg" alt="data-cycle"/>
+            <img src="/assets/data.svg" alt="data-cycle"/>
         </div>
         <p className="p1">Digitale Schnittstellen zwischen Kino und Besucher ermöglichen den Informationsaustausch entlang der gesamten Customer Journey. Lernen Sie Ihre Stammkunden kennen und gewinnen Sie neue.</p>
         <p className="p2">Kern des Tools ist ein White Label Kundenbindungs- Programm für ihr Kino. Hiermit können Ihre Besucher Trailer und Filme bewerten, Punkte sammeln und in attraktive Prämien einlösen. </p>

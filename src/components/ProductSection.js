@@ -111,7 +111,7 @@ const ProductSection = () => (
                     <p>Mit Cinuru können Kinobesucher Filme und Trailer bewerten, Punkte sammeln und gegen attraktive Prämien einlösen. Es entsteht so ein direkter Kanal zu Ihren Besuchern, über den Sie diese an ihre Lieblingsfilme zum Filmstart erinnern und sie mit besonderen Angeboten und Events ins Kino einladen können.</p>
                 </div>
                 <div className="image">
-                    <img src="assets/app.svg" alt="app"/>
+                    <img src="/assets/app.svg" alt="app"/>
                 </div>
             </div>
         </div>

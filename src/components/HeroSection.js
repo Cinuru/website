@@ -59,13 +59,14 @@ const HeroSection = () => (
     <Styles>
         <h1>Wer ist dieses Publikum, von dem alle reden?</h1>
         <div className="image">
-            <img src="assets/hero.svg" alt="hero"/>
+            <img src="/assets/hero.svg" alt="hero"/>
         </div>
         <h2>Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung.</h2>
         <div className="calltoaction">
             <Button href="mailto:contact@cinuru.com" color={gold}>Vereinbaren Sie einen Termin mit uns.</Button>
+            <h2><a href="mailto:contact@cinuru.com">contact@cinuru.com</a></h2>
             <p>Wir sind auf dem Kinokongress - gerne treffen wir uns mit Ihnen.</p>
-            <img className="congress-logo" src="assets/kinokongress.jpg" alt="kinokongress"/>
+            <img className="congress-logo" src="/assets/kinokongress.jpg" alt="kinokongress"/>
         </div>
     </Styles>
 )

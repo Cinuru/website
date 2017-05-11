@@ -28,7 +28,7 @@ const Styles = styled.section`
 
 const PrivacySection = () => (
     <Styles>
-        <img src="assets/privacy.svg" alt="privacy"/>
+        <img src="/assets/privacy.svg" alt="privacy"/>
         <h1>Beziehungen erfordern Vertrauen</h1>
         <p>Cinuru ermöglicht es dem Besucher seine Meinung abzugeben und mit seinem Kino in Kontakt zu treten. Oberste Prämisse bei der Auswertung der Informationen ist die Zustimmung der einzelnen Nutzer sowie eine Offenheit beim Umgang mit den Daten.</p>
         <h3>Cinuru steht für eine vertrauensvolle Beziehung zwischen Kino und Besucher. </h3>
