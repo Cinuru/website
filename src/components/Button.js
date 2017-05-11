@@ -6,6 +6,7 @@ import { transparentize } from 'polished'
 import { silver, gray } from './style-vars'
 
 const Styles = styled.span`
+    cursor: pointer;
     display: inline-block;
     margin: 1rem auto;
     background: ${props => props.color};
@@ -25,11 +26,9 @@ const Styles = styled.span`
 `
 
 const Button = ({href, color, children}) => (
-    <a href={href}>
-        <Styles color={color}>
-            {children}
-        </Styles>
-    </a>
+    <Styles color={color} onClick={() => {window.location.href = href}}>
+        {children}
+    </Styles>
 )
 
 Button.propTypes = {
