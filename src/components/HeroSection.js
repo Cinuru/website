@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Button from './Button'
-import { gold, container, darkgray } from './styles'
+import { gold, container, darkgray } from './style-vars'
 
 const Styles = styled.section`
     ${container}

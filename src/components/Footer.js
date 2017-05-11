@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 import { Link } from "phenomic"
 
-import { silver } from './styles'
+import { silver } from './style-vars'
 
 const Wrapper = styled.footer`
     background: black;

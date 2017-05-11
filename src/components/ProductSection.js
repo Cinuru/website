@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { silver, clearfix, container } from './styles'
+import { silver, clearfix, container } from './style-vars'
 
 const Styles = styled.section`
     background: ${silver};

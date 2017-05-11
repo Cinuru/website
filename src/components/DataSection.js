@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { container, clearfix } from './styles'
+import { container, clearfix } from './style-vars'
 
 const Styles = styled.section`
     ${container}

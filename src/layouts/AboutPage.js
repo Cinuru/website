@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Page from './Page'
-import { clearfix, gold } from '../components/styles'
+import { clearfix, gold } from '../components/style-vars'
 
 const Styles = styled.div`
     .team-member {

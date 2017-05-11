@@ -5,7 +5,7 @@ import { PageContainer } from 'phenomic'
 import StylesContainer from './styles.js'
 
 import Page from './layouts/Page'
-import ErrorPage from './layouts/ErrorPage'
+import PageError from './layouts/PageError'
 import HomePage from './layouts/Homepage'
 import AboutPage from './layouts/AboutPage'
 
@@ -14,7 +14,7 @@ const RoutesContainer = (props) => (
         { ...props }
         layouts={{
             Page,
-            ErrorPage,
+            PageError,
             HomePage,
             AboutPage,
         }}

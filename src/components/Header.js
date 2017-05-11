@@ -3,7 +3,7 @@ import PropTypes from 'proptypes'
 import styled from 'styled-components'
 import { Link } from "phenomic"
 
-import { darkgray, gold } from './styles'
+import { darkgray, gold } from './style-vars'
 
 const Wrapper = styled.header`
     z-index: 10;

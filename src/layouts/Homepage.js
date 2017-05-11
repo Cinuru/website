@@ -11,7 +11,8 @@ import PrivacySection from '../components/PrivacySection'
 
 import Button from '../components/Button'
 import Loading from '../components/Loading'
-import { gold } from '../components/styles'
+
+import { gold } from '../components/style-vars'
 
 const Styles = styled.main`
     padding: 5.5rem 0;

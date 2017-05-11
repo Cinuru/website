@@ -3,7 +3,7 @@ import PropTypes from 'proptypes'
 import styled from 'styled-components'
 import { transparentize } from 'polished'
 
-import { silver, gray } from './styles'
+import { silver, gray } from './style-vars'
 
 const Wrapper = styled.a`
     display: inline-block;
