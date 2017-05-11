@@ -1,4 +1,4 @@
 ---
-title: Cinuru | CRM für Kinos
+metaTitle: CRM für Kinos
 layout: HomePage
 ---

@@ -3,7 +3,6 @@ title: Impressum
 layout: Page
 ---
 
-# Impressum
 Angaben gemäß § 5 TMG
 
 Cinuru Research UG (haftungsbeschränkt) i.G. <br>

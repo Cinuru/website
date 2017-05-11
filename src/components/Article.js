@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
+import { gold } from './style-vars'
+
 const Styles = styled.article`
     max-width: 50rem;
     margin: 0 auto;
@@ -29,7 +31,7 @@ const Styles = styled.article`
         margin-top: -2rem;
         h1 {
             position: absolute;
-            color: gold;
+            color: ${gold};
             bottom: 0.25rem;
             left: 1.5rem;
             font-size: 5rem;
@@ -68,8 +70,16 @@ const Styles = styled.article`
     }
 `
 
-const Article = ({children}) => (
+const Article = ({title, heroImg, children}) => (
     <Styles>
+        {heroImg ? (
+            <div className="hero">
+                <h1>{title}</h1>
+                <img src={heroImg} alt=""/>
+            </div>
+        ) : (
+            <h1>{title}</h1>
+        )}
         {children}
     </Styles>
 )

@@ -18,14 +18,14 @@ const Styles = styled.main`
     }
 `
 
-const Page = ({isLoading, body, ...props}) => {
+const Page = ({isLoading, body, head, ...props}) => {
     return (
-        <Container {...props}>
+        <Container { ...{head, ...props} }>
             {isLoading ? (
                 <Loading />
             ) : (
                 <Styles>
-                    <Article>
+                    <Article title={head.title} heroImg={head.heroImg}>
                         <BodyContainer>{body}</BodyContainer>
                     </Article>
                 </Styles>

@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 const Container = ({head, children, __url}) => (
     <div>
         <HeadMeta/>
-        <Helmet title={`Cinuru | ${head.title}`}/>
+        <Helmet title={`Cinuru | ${head.metaTitle || head.title}`}/>
         <Header route={__url}/>
         {children}
         <Footer/>
