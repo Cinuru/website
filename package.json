@@ -1,6 +1,6 @@
 {
   "name": "cinuru-website",
-  "homepage": "http://cinuru.com",
+  "homepage": "https://cinuru.com",
   "repository": "https://github.com/Cinuru/website.git",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --fix .",
@@ -8,7 +8,8 @@
     "build": "phenomic build"
   },
   "phenomic": {
-    "CNAME": true
+    "CNAME": true,
+    "offline": true
   },
   "eslintConfig": {
     "root": true,
@@ -45,7 +46,6 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
-    "autotrack": "^2.3.2",
     "polished": "^1.1.1",
     "react-topbar-progress-indicator": "^1.0.0",
     "styled-components": "^1.4.5"
