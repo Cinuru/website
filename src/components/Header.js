@@ -61,7 +61,10 @@ const Wrapper = styled.header`
 class Header extends React.Component {
     constructor(props) {
         super(props)
-        const scrollPostition = window.pageYOffset | document.body.scrollTop
+        let scrollPostition = 0
+        if (typeof window !== 'undefined') {
+            scrollPostition = window.pageYOffset | document.body.scrollTop
+        }
         this.state = {scrolled: scrollPostition !== 0}
         this.handleScroll = this.handleScroll.bind(this)
     }
