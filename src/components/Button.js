@@ -5,7 +5,7 @@ import { transparentize } from 'polished'
 
 import { silver, gray } from './style-vars'
 
-const Wrapper = styled.a`
+const Styles = styled.span`
     display: inline-block;
     margin: 1rem auto;
     background: ${props => props.color};
@@ -25,7 +25,11 @@ const Wrapper = styled.a`
 `
 
 const Button = ({href, color, children}) => (
-    <Wrapper color={color} href={href} target="_top">{children}</Wrapper>
+    <a href={href}>
+        <Styles color={color} onClick={() => console.log('clicked', href)}>
+            {children}
+        </Styles>
+    </a>
 )
 
 Button.propTypes = {

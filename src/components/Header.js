@@ -92,8 +92,8 @@ class Header extends React.Component {
                             <li className={route === '/about/' ? 'active' : ''}>
                                 <Link to="about">Über Uns</Link>
                             </li>
-                            <li>
-                                <a href="mailto:contact@cinuru.com">Kontakt</a>
+                            <li className={route === '/contact/' ? 'active' : ''}>
+                                <Link to="contact">Kontakt</Link>
                             </li>
                         </ul>
                     </nav>
