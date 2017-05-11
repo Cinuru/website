@@ -25,7 +25,7 @@ const Wrapper = styled.a`
 `
 
 const Button = ({href, color, children}) => (
-    <Wrapper color={color} href={href}>{children}</Wrapper>
+    <Wrapper color={color} href={href} target="_top">{children}</Wrapper>
 )
 
 Button.propTypes = {

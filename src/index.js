@@ -16,16 +16,16 @@ const GOOGLE_ANALYTICS_UA = 'UA-90630835-3'
 // generate autotrack with
 // autotrack -o content/assets/autotrack.js -p urlChangeTracker,cleanUrlTracker,outboundLinkTracker
 // see https://github.com/MoOx/phenomic/issues/428
-if (typeof window !== 'undefined') {
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    /* global ga: true */
-    ga('create', GOOGLE_ANALYTICS_UA, 'auto')
-    ga('require', 'urlChangeTracker')
-    ga('require', 'cleanUrlTracker')
-    ga('require', 'outboundLinkTracker')
-    // log initial page
-    ga('send', 'pageview')
-}
+// if (typeof window !== 'undefined') {
+//     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+//     /* global ga: true */
+//     ga('create', GOOGLE_ANALYTICS_UA, 'auto')
+//     ga('require', 'urlChangeTracker')
+//     ga('require', 'cleanUrlTracker')
+//     ga('require', 'outboundLinkTracker')
+//     // log initial page
+//     ga('send', 'pageview')
+// }
 
 const AppContainer = ({children}) => (
     <StylesContainer>
@@ -33,7 +33,7 @@ const AppContainer = ({children}) => (
             <link rel="shortcut icon" href="/assets/favicon.png"/>
             <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&flags=gated"></script>
             <script async src="https://www.google-analytics.com/analytics.js"></script>
-            <script async src="/assets/autotrack.js"></script>
+            {/* <script async src="/assets/autotrack.js"></script> */}
         </Helmet>
         {children}
     </StylesContainer>
