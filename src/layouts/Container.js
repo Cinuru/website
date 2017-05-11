@@ -30,12 +30,12 @@ const Container = ({head, children, isLoading, __url}) => (
                 <meta name="twitter:card" value="summary"/>
                 <meta name="twitter:site" content="@cinuru"/>
                 <meta name="twitter:creator" content="@cinuru"/>
-                <meta name="twitter:image" content="http://cinuru.com/assets/thumb.jpg"/>
+                <meta name="twitter:image" content="https://cinuru.com/assets/thumb.jpg"/>
 
                 <meta property="og:title" content="Cinuru CRM für Kinos" />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="http://cinuru.com/" />
-                <meta property="og:image" content="http://cinuru.com/assets/thumb.jpg" />
+                <meta property="og:url" content="https://cinuru.com/" />
+                <meta property="og:image" content="https://cinuru.com/assets/thumb.jpg" />
                 <meta property="og:description" content="Cinuru Research: Datengetriebenes Customer Relationship Management für Kinos. Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung." />
             </Helmet>
             <Header route={__url}/>
