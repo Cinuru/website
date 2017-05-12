@@ -46,7 +46,6 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
-    "halogen": "^0.2.0",
     "polished": "^1.1.1",
     "react-topbar-progress-indicator": "^1.0.0",
     "styled-components": "^1.4.5"
