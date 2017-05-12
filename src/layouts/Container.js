@@ -19,7 +19,7 @@ const Main = styled.main`
 `
 
 const Container = ({head, children, isLoading, __url}) => (
-    true ? (
+    isLoading ? (
         <Loading />
     ) : (
         <div>
