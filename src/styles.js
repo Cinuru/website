@@ -3,6 +3,7 @@ import PropTypes from 'proptypes'
 import Helmet from 'react-helmet'
 import styled, { injectGlobal } from 'styled-components'
 import styleSheet from 'styled-components/lib/models/StyleSheet'
+import cssmin from 'cssmin'
 
 injectGlobal`
     @-ms-viewport {
@@ -82,18 +83,27 @@ const Styles = styled.div`
     }
 `
 
+// needs to be it's own component for obscrue reasons
+const ServerSideStiles = () => {
+    if (typeof window === 'undefined') {
+        return (
+            <style type="text/css">
+                {cssmin(styleSheet.rules().map(rule => rule.cssText).join(''))}
+            </style>
+        )
+    } else {
+        return null
+    }
+}
+
 const StylesContainer = ({children}) => (
     <Styles>
         <Helmet>
             <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet"/>
             <meta name='viewport' content='width=device-width, initial-scale=1'/>
-            {typeof window === 'undefined' && (
-                <style type="text/css">
-                    {styleSheet.rules().map(rule => rule.cssText).join('\n')}
-                </style>
-            )}
         </Helmet>
         {children}
+        <ServerSideStiles/>
     </Styles>
 )
 
