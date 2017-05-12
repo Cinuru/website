@@ -1,67 +1,43 @@
 import React from 'react'
-import styled from 'styled-components'
+import PropTypes from 'proptypes'
+import enhanceCollection from "phenomic/lib/enhance-collection"
+import { BodyContainer } from 'phenomic'
 
-import Page from './Page'
-import { clearfix, gold } from '../components/style-vars'
+import Container from './Container'
 
-const Styles = styled.div`
-    .team-member {
-        ${clearfix}
-        margin-bottom: 3rem;
-        position: relative;
-        min-height: 18rem;
-        img {
-            position: absolute;
-            right: 0;
-            top: 1rem;
-            width: 14rem;
-        }
-        div {
-            width: 33rem;
-        }
-        h2 {
-            margin: 0;
-        }
-        h3 {
-            font-weight: 900;
-            color: ${gold};
-        }
-        @media(max-width: 850px) {
-            img {
-                width: 30%;
-            }
-            div {
-                width: 65%;
-            }
-        }
-        @media(max-width: 600px) {
-            min-height: 0;
-            margin-top: 8.5rem;
-            &.first {
-                margin-top: 4rem !important;
-            }
-            div {
-                width: 100%;
-            }
-            img {
-                top: -8rem;
-                right: 3rem;
-                max-width: 9.5rem;
-                width: 100%;
-            }
-        }
-        @media(max-width: 350px) {
-            img {
-                right: 2rem;
-            }
-        }
-    }
-`
+import Article from '../components/Article'
+import TeamMemberSection from '../components/TeamMemberSection'
 
-const AboutPage = (props) => (
-    <Styles>
-        <Page { ...props }/>
-    </Styles>
+const getTeamMembers = (collection) => {
+    return enhanceCollection(collection, {
+        filter: ({__filename}) => __filename.split('/')[0] === 'team',
+        sort: 'order'
+    })
+}
+
+const AboutPage = (props, {collection}) => (
+    <Container { ...props }>
+        <Article title={props.head.title} heroImg={props.head.heroImg}>
+            <div>
+                <BodyContainer>
+                    {props.isLoading ? '' : props.body}
+                </BodyContainer>
+                {getTeamMembers(collection).map((props, i) =>
+                    <TeamMemberSection { ...props } key={i} className={i===0 ? 'first' : undefined}/>
+                )}
+            </div>
+        </Article>
+    </Container>
 )
+
+AboutPage.propTypes = {
+    head: PropTypes.object,
+    body: PropTypes.string,
+    isLoading: PropTypes.bool
+}
+
+AboutPage.contextTypes = {
+    collection: PropTypes.array.isRequired
+}
 
 export default AboutPage

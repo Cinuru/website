@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "cinuru-website",
   "homepage": "https://cinuru.com",
   "repository": "https://github.com/Cinuru/website.git",
@@ -9,7 +10,8 @@
   },
   "phenomic": {
     "CNAME": true,
-    "offline": true
+    "offline": true,
+    "nojekyll": true
   },
   "eslintConfig": {
     "root": true,
