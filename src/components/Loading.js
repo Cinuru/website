@@ -1,6 +1,8 @@
 import React from "react"
 import Helmet from "react-helmet"
+import styled from 'styled-components'
 import TopBarProgressIndicator from "react-topbar-progress-indicator"
+import Loader from 'halogen/BounceLoader'
 
 import { gold } from './style-vars'
 
@@ -13,10 +15,23 @@ TopBarProgressIndicator.config({
     shadowBlur: 0,
 })
 
+const Styles = styled.div`
+    display: block;
+    height: 100vh;
+    text-align: center;
+    .loader {
+        margin-top: 40vh;
+        display: inline-block;
+    }
+`
+
 const Loading = () => (
     <div>
-        <Helmet title={ "Loading..." }/>
+        <Helmet title={ "Cinuru | Loading..." }/>
         <TopBarProgressIndicator />
+        <Styles className="spinner">
+            <Loader color={gold} size="4rem" className="loader"/>
+        </Styles>
     </div>
 )
 
