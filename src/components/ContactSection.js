@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import Button from './Button'
@@ -10,10 +11,14 @@ const Styles = styled.section`
     text-align: center;
 `
 
-const ContactSection = () => (
+const ContactSection = ({cta}) => (
     <Styles>
-        <Button color={gold} href="mailto:contact@cinuru.com">Kontaktieren Sie uns</Button>
+        <Button color={gold} href="mailto:contact@cinuru.com">{cta}</Button>
     </Styles>
 )
+
+ContactSection.propTypes = {
+    cta: PropTypes.string.isRequired
+}
 
 export default ContactSection

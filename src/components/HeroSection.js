@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import Button from './Button'
@@ -55,19 +56,26 @@ const Styles = styled.section`
     }
 `
 
-const HeroSection = () => (
+const HeroSection = ({title, img, highlight, cta}) => (
     <Styles>
-        <h1>Wer ist dieses Publikum, von dem alle reden?</h1>
+        <h1>{title}</h1>
         <div className="image">
-            <img src="/assets/hero.svg" alt="hero"/>
+            <img src={img} alt="hero"/>
         </div>
-        <h2>Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung.</h2>
+        <h2>{highlight}</h2>
         <div className="calltoaction">
-            <Button href="mailto:contact@cinuru.com" color={gold}>Vereinbaren Sie einen Termin mit uns.</Button>
+            <Button href="mailto:contact@cinuru.com" color={gold}>{cta}</Button>
             <p>Wir sind auf dem Kinokongress - gerne treffen wir uns mit Ihnen.</p>
             <img className="congress-logo" src="/assets/kinokongress.jpg" alt="kinokongress"/>
         </div>
     </Styles>
 )
+
+HeroSection.propTypes = {
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    highlight: PropTypes.string.isRequired,
+    cta: PropTypes.string.isRequired
+}
 
 export default HeroSection

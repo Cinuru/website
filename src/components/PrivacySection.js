@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import { container } from './style-vars'
@@ -26,13 +27,20 @@ const Styles = styled.section`
     }
 `
 
-const PrivacySection = () => (
+const PrivacySection = ({title, img, text, highlight}) => (
     <Styles>
-        <img src="/assets/privacy.svg" alt="privacy"/>
-        <h1>Beziehungen erfordern Vertrauen</h1>
-        <p>Cinuru ermöglicht es dem Besucher seine Meinung abzugeben und mit seinem Kino in Kontakt zu treten. Oberste Prämisse bei der Auswertung der Informationen ist die Zustimmung der einzelnen Nutzer sowie eine Offenheit beim Umgang mit den Daten.</p>
-        <h3>Cinuru steht für eine vertrauensvolle Beziehung zwischen Kino und Besucher. </h3>
+        <img src={img} alt="privacy"/>
+        <h1>{title}</h1>
+        {text.map((p, i) => <p key={i}>{p}</p>)}
+        <h3>{highlight}</h3>
     </Styles>
 )
+
+PrivacySection.propTypes = {
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    text: PropTypes.arrayOf(PropTypes.tring).isRequired,
+    highlight: PropTypes.string.isRequired
+}
 
 export default PrivacySection

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import { silver, clearfix, container } from './style-vars'
@@ -101,21 +102,26 @@ const Styles = styled.section`
     }
 `
 
-const ProductSection = () => (
+const ProductSection = ({title, img, text}) => (
     <Styles>
         <div className="container">
-            <h1>Machen Sie Ihre Besucher zu Kinofreunden</h1>
+            <h1>{title}</h1>
             <div className="columns">
                 <div className="description">
-                    <p>Ein spielerisches Kundenbindungs-Programm direkt auf dem Smartphone.</p>
-                    <p>Mit Cinuru können Kinobesucher Filme und Trailer bewerten, Punkte sammeln und gegen attraktive Prämien einlösen. Es entsteht so ein direkter Kanal zu Ihren Besuchern, über den Sie diese an ihre Lieblingsfilme zum Filmstart erinnern und sie mit besonderen Angeboten und Events ins Kino einladen können.</p>
+                    {text.map((p, i) => <p key={i}>{p}</p>)}
                 </div>
                 <div className="image">
-                    <img src="/assets/app.svg" alt="app"/>
+                    <img src={img} alt="app"/>
                 </div>
             </div>
         </div>
     </Styles>
 )
+
+ProductSection.propTypes = {
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    text: PropTypes.arrayOf(PropTypes.tring).isRequired
+}
 
 export default ProductSection

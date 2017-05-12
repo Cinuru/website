@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'proptypes'
 
 import Container from './Container'
 
@@ -11,13 +12,17 @@ import ContactSection from '../components/ContactSection'
 const HomePage = (props) => (
     <Container { ...props }>
         <div>
-            <HeroSection/>
-            <ProductSection/>
-            <DataSection/>
-            <PrivacySection/>
-            <ContactSection/>
+            <HeroSection { ...props.head.sections.hero }/>
+            <ProductSection { ...props.head.sections.product }/>
+            <DataSection { ...props.head.sections.data }/>
+            <PrivacySection { ...props.head.sections.privacy }/>
+            <ContactSection { ...props.head.sections.contact }/>
         </div>
     </Container>
 )
+
+HomePage.propTypes = {
+    head: PropTypes.object.isRequired
+}
 
 export default HomePage
