@@ -65,8 +65,8 @@ const HeroSection = ({title, img, highlight, cta}) => (
         <h2>{highlight}</h2>
         <div className="calltoaction">
             <Button href="mailto:contact@cinuru.com" color={gold}>{cta}</Button>
-            <p>Wir sind auf dem Kinokongress - gerne treffen wir uns mit Ihnen.</p>
-            <img className="congress-logo" src="/assets/kinokongress.jpg" alt="kinokongress"/>
+            {/* <p>Wir sind auf dem Kinokongress - gerne treffen wir uns mit Ihnen.</p>
+            <img className="congress-logo" src="/assets/kinokongress.jpg" alt="kinokongress"/> */}
         </div>
     </Styles>
 )

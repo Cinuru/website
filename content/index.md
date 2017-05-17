@@ -6,7 +6,7 @@ sections:
         title: "Wer ist dieses Publikum, von dem alle reden?"
         img: /assets/hero.svg
         highlight: "Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung."
-        cta: "Vereinbaren Sie einen Termin mit uns."
+        cta: "Kontaktieren Sie uns."
     product:
         title: "Machen Sie Ihre Besucher zu Kinofreunden"
         img: /assets/app.svg
