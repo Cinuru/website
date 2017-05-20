@@ -7,3 +7,4 @@ dist
 
 # yarn
 yarn.lock
+.DS_Store
