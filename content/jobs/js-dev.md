@@ -1,7 +1,11 @@
 ---
 title: JavaScript Developer
 subtitle: React (Native)
-metaTitle: JS Dev
+pageTitle: JS Dev
+metaTitle: JavaScript Developer | React (Native)
+metaImage: /assets/js-dev-thumb.jpg
+metaUrl: /jobs/js-dev
+metaDescription: Join the Cinuru team and develop the next-generation cinema loyalty platform.
 layout: JobPage
 typeform: https://cinuru.typeform.com/to/ESf0Dg
 jobDescription: /assets/js-dev.pdf
