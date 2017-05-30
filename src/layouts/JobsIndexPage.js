@@ -6,38 +6,40 @@ import { BodyContainer } from 'phenomic'
 import Container from './Container'
 
 import Article from '../components/Article'
-import TeamMemberSection from '../components/TeamMemberSection'
 
-const getTeamMembers = collection => {
+const getJobs = collection => {
     return enhanceCollection(collection, {
-        filter: ({ __filename }) => __filename.split('/')[0] === 'team',
-        sort: 'order'
+        filter: ({ layout }) => layout === 'JobPage'
     })
 }
 
-const AboutPage = (props, { collection }) => (
+const JobsIndexPage = (props, { collection }) => (
     <Container {...props}>
         <Article title={props.head.title} heroImg={props.head.heroImg}>
             <div>
                 <BodyContainer>
                     {props.isLoading ? '' : props.body}
                 </BodyContainer>
-                {getTeamMembers(collection).map((props, i) => (
-                    <TeamMemberSection {...props} key={i} className={i === 0 ? 'first' : undefined} />
+                {getJobs(collection).map((props, i) => (
+                    <div key={i}>
+                        <pre>
+                            {JSON.stringify(props, null, 4)}
+                        </pre>
+                    </div>
                 ))}
             </div>
         </Article>
     </Container>
 )
 
-AboutPage.propTypes = {
+JobsIndexPage.propTypes = {
     head: PropTypes.object,
     body: PropTypes.string,
     isLoading: PropTypes.bool
 }
 
-AboutPage.contextTypes = {
+JobsIndexPage.contextTypes = {
     collection: PropTypes.array.isRequired
 }
 
-export default AboutPage
+export default JobsIndexPage

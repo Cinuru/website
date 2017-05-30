@@ -10,6 +10,8 @@ import Page from './layouts/Page'
 import PageError from './layouts/PageError'
 import HomePage from './layouts/Homepage'
 import AboutPage from './layouts/AboutPage'
+import JobsIndexPage from './layouts/JobsIndexPage'
+import JobPage from './layouts/JobPage'
 
 const GOOGLE_ANALYTICS_UA = 'UA-90630835-3'
 
@@ -17,7 +19,9 @@ const GOOGLE_ANALYTICS_UA = 'UA-90630835-3'
 // autotrack -o content/assets/autotrack.js -p urlChangeTracker,cleanUrlTracker,outboundLinkTracker
 // see https://github.com/MoOx/phenomic/issues/428
 if (typeof window !== 'undefined') {
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    // prettier-ignore
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)}
+    ga.l = +new Date()
     /* global ga: true */
     ga('create', GOOGLE_ANALYTICS_UA, 'auto')
     ga('require', 'urlChangeTracker')
@@ -27,35 +31,38 @@ if (typeof window !== 'undefined') {
     ga('send', 'pageview')
 }
 
-const AppContainer = ({children}) => (
+const AppContainer = ({ children }) => (
     <StylesContainer>
         <Helmet>
-            <link rel="shortcut icon" href="/assets/favicon.png"/>
-            <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&flags=gated"></script>
-            <script async src="https://www.google-analytics.com/analytics.js"></script>
-            <script async src="/assets/autotrack.js"></script>
+            <link rel="shortcut icon" href="/assets/favicon.png" />
+            <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&flags=gated" />
+            <script async src="https://www.google-analytics.com/analytics.js" />
+            <script async src="/assets/autotrack.js" />
         </Helmet>
         {children}
     </StylesContainer>
 )
 
 AppContainer.propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node
 }
 
-const RoutesContainer = (props) => (
-    <PageContainer { ...props }
+const RoutesContainer = props => (
+    <PageContainer
+        {...props}
         layouts={{
             Page,
             PageError,
             HomePage,
             AboutPage,
+            JobsIndexPage,
+            JobPage
         }}
     />
 )
 
 export default (
-    <Route component={ AppContainer }>
-        <Route path="*" component={ RoutesContainer } />
+    <Route component={AppContainer}>
+        <Route path="*" component={RoutesContainer} />
     </Route>
 )

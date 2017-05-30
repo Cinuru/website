@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components'
-import { Link } from "phenomic"
+import { Link } from 'phenomic'
 
 import { silver } from './style-vars'
 
@@ -56,19 +56,22 @@ const Footer = () => (
                     <li><Link to="/">Startseite</Link></li>
                     <li><Link to="/about">Über Uns</Link></li>
                     <li><Link to="/contact">Kontakt</Link></li>
+                    <li><Link to="/jobs">Jobs</Link></li>
                     <li><Link to="/impressum">Impressum</Link></li>
                 </ul>
             </div>
             <div className="address">
                 <p>© Cinuru Research UG i.G. <span className="small">(haftungsbeschränkt)</span></p>
                 <p>contact@cinuru.com</p>
-                <p>℅ Startbüro Filmuniversität<br/>
-                    August-Bebel-Str. 26<br/>
-                14482 Potsdam</p>
+                <p>
+                    ℅ Startbüro Filmuniversität<br />
+                    August-Bebel-Str. 26<br />
+                    14482 Potsdam
+                </p>
             </div>
             <div className="supporters">
                 <h2>Gefördert Durch:</h2>
-                <img src="/assets/supporters.png" alt="supported by"/>
+                <img src="/assets/supporters.png" alt="supported by" />
             </div>
         </div>
     </Wrapper>
