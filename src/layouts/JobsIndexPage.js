@@ -6,6 +6,7 @@ import { BodyContainer } from 'phenomic'
 import Container from './Container'
 
 import Article from '../components/Article'
+import JobListingItem from '../components/JobListingItem'
 
 const getJobs = collection => {
     return enhanceCollection(collection, {
@@ -20,13 +21,7 @@ const JobsIndexPage = (props, { collection }) => (
                 <BodyContainer>
                     {props.isLoading ? '' : props.body}
                 </BodyContainer>
-                {getJobs(collection).map((props, i) => (
-                    <div key={i}>
-                        <pre>
-                            {JSON.stringify(props, null, 4)}
-                        </pre>
-                    </div>
-                ))}
+                {getJobs(collection).map((props, i) => <JobListingItem {...props} key={i} />)}
             </div>
         </Article>
     </Container>
