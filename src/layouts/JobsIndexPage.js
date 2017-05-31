@@ -17,7 +17,7 @@ const getJobs = collection => {
 const JobsIndexPage = (props, { collection }) => (
     <Container {...props}>
         <Article title={props.head.title} heroImg={props.head.heroImg}>
-            <div>
+            <div style={{ textAlign: 'center' }}>
                 <BodyContainer>
                     {props.isLoading ? '' : props.body}
                 </BodyContainer>

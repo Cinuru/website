@@ -126,7 +126,6 @@ const JobPage = ({ head: { title, subtitle, summary, typeform, jobDescription, .
 )
 
 JobPage.propTypes = {
-    props: PropTypes.any,
     head: PropTypes.object,
     body: PropTypes.string,
     isLoading: PropTypes.bool

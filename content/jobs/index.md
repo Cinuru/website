@@ -1,9 +1,10 @@
 ---
-title: Ever Dreamed of Revoluzionizing the Movie Industy?
+title: Join Our Team
+heroImg: /assets/office.jpg
 metaTitle: Jobs
 layout: JobsIndexPage
 ---
 
-Join the Cinuru team and develop the next-generation cinema loyalty platform.
-
-## Open Positions:
+</br>
+</br>
+# Currently open positions:
