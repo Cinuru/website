@@ -4,9 +4,8 @@ import { BodyContainer } from 'phenomic'
 import styled from 'styled-components'
 import FileIcon from 'react-icons/lib/fa/file-pdf-o'
 
-import { gold, silver } from '../components/style-vars'
+import { gold } from '../components/style-vars'
 import Container from './Container'
-import Article from '../components/Article'
 
 const Wrapper = styled.div`
     article {
