@@ -10,46 +10,57 @@ import Article from '../components/Article'
 
 const Wrapper = styled.div`
     article {
-        max-width: 40rem;
+        max-width: 35rem;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 4rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        p {
+            padding: 0 1rem;
+        }
+        @media(max-width: 350px) {
+            font-size: 1.1rem;
+        }
     }
     h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
         font-weight: 900;
+        margin-top: 1rem;
         margin-bottom: 0.5rem;
     }
     h2 {
+        font-size: 1.9rem;
         font-weight: 900;
         color: ${gold};
         margin-bottom: 4rem;
     }
-    .overview {
-        font-size: 1.2rem;
+    .summary {
         line-height: 2rem;
         text-align: left;
+        width: 28rem;
+        margin: 3rem auto;
+        h3 {
+            font-style: normal;
+            font-weight: 900;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
         .label {
             display: inline-block;
             color: ${gold};
-            width: 10rem;
+            width: 5rem;
             font-weight: 900;
             text-transform: uppercase;
             text-align: right;
             margin-right: 1rem;
         }
-        .text {
+        .description {
+            display: inline-block;
             text-align: left;
-        }
-    }
-    .job-description {
-        margin: 4rem 0;
-        h3 {
-            font-weight: 500;
-            font-style: normal;
-            font-size: 1.2rem;
-            max-width: 14rem;
-            margin: 0.5rem auto;
+            width: 22rem;
         }
     }
     .file {
@@ -76,11 +87,15 @@ const Wrapper = styled.div`
         width: 100%;
         height: 30rem;
         border: none;
+        margin-top: -2rem;
         margin-bottom: -6rem;
+        @media(max-width: 600px) {
+            height: 35rem;
+        }
     }
 `
 
-const JobPage = ({ head: { title, subtitle, overview, typeform, jobDescription, ...head }, body, ...props }) => (
+const JobPage = ({ head: { title, subtitle, summary, typeform, jobDescription, ...head }, body, ...props }) => (
     <Container {...{ head, ...props }}>
         <Wrapper>
             <article>
@@ -89,16 +104,17 @@ const JobPage = ({ head: { title, subtitle, overview, typeform, jobDescription, 
                 <BodyContainer>
                     {props.isLoading ? '' : body}
                 </BodyContainer>
-                <div>
-                    {Object.keys(overview).map(label => (
-                        <div className="overview">
+                <div className="summary">
+                    <h3>Job Summary</h3>
+                    {Object.keys(summary).map(label => (
+                        <div>
                             <span className="label">{label}</span>
-                            <span className="description">{overview[label]}</span>
+                            <span className="description">{summary[label]}</span>
                         </div>
                     ))}
                 </div>
                 <div className="job-description">
-                    <h3>Download job description to learn more:</h3>
+                    <p>Download the full job description to learn more:</p>
                     <a className="file" href={jobDescription} target="_blank">
                         <div className="icon"><FileIcon color={gold} width="100%" height="100%" /></div>
                         <div className="text">Job Description</div>
