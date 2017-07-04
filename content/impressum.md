@@ -5,7 +5,7 @@ layout: Page
 
 Angaben gemäß § 5 TMG
 
-Cinuru Research UG (haftungsbeschränkt) i.G. <br>
+Cinuru Research UG (haftungsbeschränkt)<br>
 ℅ Startbüro Filmuniversität <br>
 August-Bebel-Str. 26 <br>
 14482 Potsdam <br>
