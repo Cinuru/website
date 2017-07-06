@@ -14,10 +14,10 @@ August-Bebel-Str. 26 <br>
 Martina Berger <br>
 Geschäftsführerin
 
-<!-- **Registereintrag:** <br>
+**Registereintrag:** <br>
 Eintragung im Handelsregister. <br>
 Registergericht: Potsdam <br>
-Registernummer: 000 <br> -->
+Registernummer: HRB 29994 <br>
 
 ## Haftungsausschluss:
 
