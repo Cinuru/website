@@ -6,7 +6,7 @@ layout: Page
 Angaben gemäß § 5 TMG
 
 Cinuru Research UG (haftungsbeschränkt)<br>
-℅ Startbüro Filmuniversität <br>
+℅ Startbüro Babelsberg <br>
 August-Bebel-Str. 26 <br>
 14482 Potsdam <br>
 
