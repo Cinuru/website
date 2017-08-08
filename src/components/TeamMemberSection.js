@@ -1,11 +1,10 @@
-import React from 'react'
-import PropTypes from 'proptypes'
-import styled from 'styled-components'
-import { clearfix, gold } from '../components/style-vars'
+import React from 'react';
+import PropTypes from 'proptypes';
+import styled from 'styled-components';
+import { clearfix, black } from '../components/style-vars';
 
 const Styles = styled.section`
-    ${clearfix}
-    margin-bottom: 3rem;
+    ${clearfix} margin-bottom: 3rem;
     position: relative;
     min-height: 18rem;
     img {
@@ -22,9 +21,9 @@ const Styles = styled.section`
     }
     h3 {
         font-weight: 900;
-        color: ${gold};
+        color: ${black};
     }
-    @media(max-width: 850px) {
+    @media (max-width: 850px) {
         img {
             width: 30%;
         }
@@ -32,7 +31,7 @@ const Styles = styled.section`
             width: 65%;
         }
     }
-    @media(max-width: 600px) {
+    @media (max-width: 600px) {
         min-height: 0;
         margin-top: 8.5rem;
         &.first {
@@ -48,25 +47,32 @@ const Styles = styled.section`
             width: 100%;
         }
     }
-    @media(max-width: 350px) {
+    @media (max-width: 350px) {
         img {
             right: 2rem;
         }
     }
-`
+`;
 
-const getId = (filename) => filename.split('/')[1].split('.md')[0]
+const getId = filename => filename.split('/')[1].split('.md')[0];
 
-const TeamMemberSection = ({img, name, position, description, __filename, className}) => (
+const TeamMemberSection = ({ img, name, position, description, __filename, className }) =>
     <Styles id={getId(__filename)} className={className}>
-        <img src={img} alt={name}/>
+        <img src={img} alt={name} />
         <div>
-            <h2>{name}</h2>
-            <h3>{position}</h3>
-            {description.map((p, i) => <p key={i}>{p}</p>)}
+            <h2>
+                {name}
+            </h2>
+            <h3>
+                {position}
+            </h3>
+            {description.map((p, i) =>
+                <p key={i}>
+                    {p}
+                </p>
+            )}
         </div>
-    </Styles>
-)
+    </Styles>;
 
 TeamMemberSection.propTypes = {
     className: PropTypes.string,
@@ -75,6 +81,6 @@ TeamMemberSection.propTypes = {
     position: PropTypes.string.isRequired,
     description: PropTypes.arrayOf(PropTypes.string).isRequired,
     __filename: PropTypes.string.isRequired,
-}
+};
 
-export default TeamMemberSection
+export default TeamMemberSection;

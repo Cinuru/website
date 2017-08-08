@@ -4,7 +4,7 @@ import { BodyContainer } from 'phenomic'
 import styled from 'styled-components'
 import FileIcon from 'react-icons/lib/fa/file-pdf-o'
 
-import { gold } from '../components/style-vars'
+import { brand } from '../components/style-vars'
 import Container from './Container'
 
 const Wrapper = styled.div`
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     h2 {
         font-size: 1.9rem;
         font-weight: 900;
-        color: ${gold};
+        color: ${brand};
         margin-bottom: 4rem;
     }
     .summary {
@@ -49,7 +49,7 @@ const Wrapper = styled.div`
         }
         .label {
             display: inline-block;
-            color: ${gold};
+            color: ${brand};
             width: 5rem;
             font-weight: 900;
             text-transform: uppercase;
@@ -68,7 +68,7 @@ const Wrapper = styled.div`
         margin: 0 auto;
         padding: 0.25rem 1rem 1rem 1rem;
         border-radius: 1rem;
-        color: ${gold};
+        color: ${brand};
         font-size: 1.3rem;
         font-weight: 900;
         text-align: center;
@@ -115,7 +115,7 @@ const JobPage = ({ head: { title, subtitle, summary, typeform, jobDescription, .
                 <div className="job-description">
                     <p>Download the full job description to learn more:</p>
                     <a className="file" href={jobDescription} target="_blank">
-                        <div className="icon"><FileIcon color={gold} width="100%" height="100%" /></div>
+                        <div className="icon"><FileIcon color={brand} width="100%" height="100%" /></div>
                         <div className="text">Job Description</div>
                     </a>
                 </div>

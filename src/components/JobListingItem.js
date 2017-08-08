@@ -1,16 +1,16 @@
-import React from 'react'
-import PropTypes from 'proptypes'
-import styled from 'styled-components'
-import { Link } from 'phenomic'
+import React from 'react';
+import PropTypes from 'proptypes';
+import styled from 'styled-components';
+import { Link } from 'phenomic';
 
-import { gold } from './style-vars'
+import { gray } from './style-vars';
 
 const Wrapper = styled.div`
     cursor: pointer;
-    background: ${gold};
+    background: ${gray};
     max-width: 30rem;
     margin: 2rem auto;
-    padding: 1rem  2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     border-radius: 1rem;
     text-align: center;
     h3 {
@@ -47,28 +47,33 @@ const Wrapper = styled.div`
             width: 22rem;
         }
     }
-`
+`;
 
-const JobListingItem = ({ title, summary, __url }) => (
+const JobListingItem = ({ title, summary, __url }) =>
     <Link to={__url}>
         <Wrapper>
-            <h3>{title}</h3>
+            <h3>
+                {title}
+            </h3>
             <div className="summary">
-                {Object.keys(summary).map(label => (
+                {Object.keys(summary).map(label =>
                     <div>
-                        <span className="label">{label}</span>
-                        <span className="description">{summary[label]}</span>
+                        <span className="label">
+                            {label}
+                        </span>
+                        <span className="description">
+                            {summary[label]}
+                        </span>
                     </div>
-                ))}
+                )}
             </div>
         </Wrapper>
-    </Link>
-)
+    </Link>;
 
 JobListingItem.propTypes = {
     title: PropTypes.string,
     summary: PropTypes.objectOf(PropTypes.string),
-    __url: PropTypes.string
-}
+    __url: PropTypes.string,
+};
 
-export default JobListingItem
+export default JobListingItem;

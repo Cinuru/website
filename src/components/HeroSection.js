@@ -3,7 +3,7 @@ import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import Button from './Button'
-import { gold, container, darkgray } from './style-vars'
+import { brand, container, darkgray } from './style-vars'
 
 const Styles = styled.section`
     ${container}
@@ -64,7 +64,7 @@ const HeroSection = ({title, img, highlight, cta}) => (
         </div>
         <h2>{highlight}</h2>
         <div className="calltoaction">
-            <Button href="mailto:contact@cinuru.com" color={gold}>{cta}</Button>
+            <Button href="mailto:contact@cinuru.com" color={brand}>{cta}</Button>
             {/* <p>Wir sind auf dem Kinokongress - gerne treffen wir uns mit Ihnen.</p>
             <img className="congress-logo" src="/assets/kinokongress.jpg" alt="kinokongress"/> */}
         </div>

@@ -3,7 +3,7 @@ import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
 import Button from './Button'
-import { gold, container } from './style-vars'
+import { brand, container } from './style-vars'
 
 const Styles = styled.section`
     ${container}
@@ -13,7 +13,7 @@ const Styles = styled.section`
 
 const ContactSection = ({cta}) => (
     <Styles>
-        <Button color={gold} href="mailto:contact@cinuru.com">{cta}</Button>
+        <Button color={brand} href="mailto:contact@cinuru.com">{cta}</Button>
     </Styles>
 )
 

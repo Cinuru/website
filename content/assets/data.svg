@@ -3,13 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 976.5 966.2" style="enable-background:new 0 0 976.5 966.2;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:12.13,18.2;}
-	.st2{fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:11.55,17.32;}
-	.st3{fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:11.23,16.84;}
-	.st4{fill:#CCCCCC;}
-	.st5{fill:#2D2D2D;}
-	.st6{fill:none;stroke:#CCCCCC;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;}
+	.st0{fill:none;stroke:#15161B;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#15161B;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:12.13,18.2;}
+	.st2{fill:none;stroke:#15161B;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:11.55,17.32;}
+	.st3{fill:none;stroke:#15161B;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:11.23,16.84;}
+	.st4{fill:#B5BFCB;}
+	.st5{fill:#15161B;}
+	.st6{fill:none;stroke:#B5BFCB;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;}
 	.st7{fill:#010000;}
 </style>
 <g>
@@ -575,11 +575,11 @@
 		c7.9,4.3,20.6,6.5,32.7,6.7c12.1,0.2,24.8-1.5,32.9-5.5L581.1,332.4z M548.9,301.7c22.6,0.4,32.7,7,32.6,9s-10.4,8.1-32.9,7.7
 		s-32.7-7-32.6-9S526.4,301.2,548.9,301.7L548.9,301.7z M547.4,383.7c-22.6-0.4-32.7-7-32.6-9l0.2-11.4c7.9,4.3,20.6,6.5,32.7,6.7
 		c12.1,0.2,24.8-1.5,32.9-5.5l-0.2,11.3C580.3,377.8,570,384,547.4,383.7L547.4,383.7z"/>
-	
+
 		<ellipse transform="matrix(1.872460e-02 -0.9998 0.9998 1.872460e-02 183.0174 842.5814)" cx="520.8" cy="328.1" rx="3.1" ry="3.1"/>
-	
+
 		<ellipse transform="matrix(1.872460e-02 -0.9998 0.9998 1.872460e-02 160.8652 863.5228)" cx="520.4" cy="349.8" rx="3.1" ry="3.1"/>
-	
+
 		<ellipse transform="matrix(1.872460e-02 -0.9998 0.9998 1.872460e-02 138.7028 884.4739)" cx="519.9" cy="371.6" rx="3.1" ry="3.1"/>
 	<path d="M356.7,260.7l-37.3,6.3c-4.6,0.8-7.8,5.2-7,9.9l13.3,78.8c0.8,4.6,5.2,7.8,9.9,7l37.4-6.3c4.6-0.8,7.8-5.2,7-9.9
 		l-13.3-78.8C365.8,263,361.4,259.9,356.7,260.7z M333.5,271.5l11.4-1.9c0.7-0.1,1.4,0.4,1.5,1.2c0.1,0.7-0.4,1.3-1,1.4l-11.4,1.9
