@@ -10,5 +10,5 @@ Wir sind eine Neugründung aus dem Umfeld der Filmuniversität Babelsberg KONRAD
 Seit November 2016 werden wir als Forschungsgruppe Greenlight Analytics durch das Stipendienprogramm EXIST des Bundesministeriums für Wirtschaft und Energie gefördert. Im April 2017 wurde Cinuru Research als UG gegründet.
 
 <br/>
-# Die Gründer
+# Das Team
 <br/>
