@@ -1,6 +1,6 @@
 ---
 name: Rebecca Scharlach
-img: /assets/rebecca.png
+img: /assets/rebecca.001.png
 position: Product & Development
 order: 6
 description:
