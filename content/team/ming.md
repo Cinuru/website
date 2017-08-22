@@ -1,6 +1,6 @@
 ---
 name: Ming-Tung Hong
-img: /assets/ming.png
+img: /assets/ming.001.png
 position: Software Development
 order: 7
 description:
