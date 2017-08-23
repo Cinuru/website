@@ -1,6 +1,6 @@
 ---
 name: Rebecca Scharlach
-img: /assets/rebecca.001.png
+img: /assets/rebecca.png
 position:  Team Assistance
 order: 6
 description:
