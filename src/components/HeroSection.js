@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'proptypes'
-import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'proptypes';
+import styled from 'styled-components';
 
-import Button from './Button'
-import { brand, container, darkgray } from './style-vars'
+import Button from './Button';
+import { brand, container, darkgray } from './style-vars';
 
 const Styles = styled.section`
     ${container}
@@ -19,7 +19,7 @@ const Styles = styled.section`
     p {
         text-transform: uppercase;
         font-size: 0.9rem;
-        width: 18rem;
+        max-width: 40rem;
         font-weight: 700;
         color: ${darkgray};
         margin: 0.5rem auto 0 auto;
@@ -54,28 +54,33 @@ const Styles = styled.section`
             width: 12rem;
         }
     }
-`
+`;
 
-const HeroSection = ({title, img, highlight, cta}) => (
-    <Styles>
-        <h1>{title}</h1>
-        <div className="image">
-            <img src={img} alt="hero"/>
-        </div>
-        <h2>{highlight}</h2>
-        <div className="calltoaction">
-            <Button href="mailto:contact@cinuru.com" color={brand}>{cta}</Button>
-            {/* <p>Wir sind auf dem Kinokongress - gerne treffen wir uns mit Ihnen.</p>
-            <img className="congress-logo" src="/assets/kinokongress.jpg" alt="kinokongress"/> */}
-        </div>
-    </Styles>
-)
+const HeroSection = ({ title, img, highlight, cta }) => (
+	<Styles>
+		<h1>{title}</h1>
+		<div className="image">
+			<img src={img} alt="hero" />
+		</div>
+		<h2>{highlight}</h2>
+		<div className="calltoaction">
+			<Button href="mailto:contact@cinuru.com" color={brand}>
+				{cta}
+			</Button>
+			<p>
+				Wir sind auf der Filmkunstmesse in Leipzig. Besuchen Sie uns Donnerstag zwischen 12:00
+				und 14:00 in der Business Lounge oder machen Sie einen Termin aus.
+			</p>
+			<img className="congress-logo" src="/assets/filmkunstmesse.svg" alt="filmkunstmesse" />
+		</div>
+	</Styles>
+);
 
 HeroSection.propTypes = {
-    title: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
-    highlight: PropTypes.string.isRequired,
-    cta: PropTypes.string.isRequired
-}
+	title: PropTypes.string.isRequired,
+	img: PropTypes.string.isRequired,
+	highlight: PropTypes.string.isRequired,
+	cta: PropTypes.string.isRequired,
+};
 
-export default HeroSection
+export default HeroSection;
