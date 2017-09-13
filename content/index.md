@@ -9,7 +9,7 @@ sections:
         cta: "Kontaktieren Sie uns."
     product:
         title: "Machen Sie Ihre Besucher zu Kinofreunden"
-        img: /assets/app.svg
+        img: /assets/app.png
         text:
             - "Ein spielerisches Kundenbindungs-Programm direkt auf dem Smartphone."
             - "Mit Cinuru können Kinobesucher Filme und Trailer bewerten, Punkte sammeln und gegen attraktive Prämien einlösen. Es entsteht so ein direkter Kanal zu Ihren Besuchern, über den Sie diese an ihre Lieblingsfilme zum Filmstart erinnern und sie mit besonderen Angeboten und Events ins Kino einladen können."
