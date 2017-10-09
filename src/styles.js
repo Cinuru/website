@@ -41,79 +41,89 @@ injectGlobal`
         color: inherit;
         text-decoration: none;
     }
+    iframe {
+        border-width: 0px;
+    }
+
 `;
 
 const Styles = styled.div`
-    h1 {
-        font-size: 2rem;
-        font-weight: 300;
-        margin: 0;
-        @media (max-width: 600px) {
-            font-size: 1.7rem;
-        }
-        @media (max-width: 500px) {
-            font-size: 1.5rem;
-        }
-    }
+	h1 {
+		font-size: 2rem;
+		font-weight: 300;
+		margin: 0;
+		@media (max-width: 600px) {
+			font-size: 1.7rem;
+		}
+		@media (max-width: 500px) {
+			font-size: 1.5rem;
+		}
+	}
 
-    h2 {
-        font-weight: 500;
-        font-size: 1.5rem;
-        ${'' /* font-style: italic; */} color: ${darkgray};
-        margin: 0;
-        @media (max-width: 600px) {
-            font-size: 1.3rem;
-        }
-        @media (max-width: 600px) {
-            font-size: 1.15rem;
-        }
-    }
+	h2 {
+		font-weight: 500;
+		font-size: 1.5rem;
+		${'' /* font-style: italic; */} color: ${darkgray};
+		margin: 0;
+		@media (max-width: 600px) {
+			font-size: 1.3rem;
+		}
+		@media (max-width: 600px) {
+			font-size: 1.15rem;
+		}
+	}
 
-    h3 {
-        font-size: 1.2rem;
-        font-weight: 700;
-        ${'' /* font-style: italic; */} color: ${darkgray};
-        margin: 0;
-        @media (max-width: 600px) {
-            font-size: 1rem;
-        }
-    }
+	h3 {
+		font-size: 1.2rem;
+		font-weight: 700;
+		${'' /* font-style: italic; */} color: ${darkgray};
+		margin: 0;
+		@media (max-width: 600px) {
+			font-size: 1rem;
+		}
+	}
 
-    p {
-        @media (max-width: 600px) {
-            font-size: 1.1rem;
-        }
-    }
+	p {
+		@media (max-width: 600px) {
+			font-size: 1.1rem;
+		}
+	}
 `;
 
 // needs to be it's own component for obscrue reasons
 const ServerSideStiles = () => {
-    if (typeof window === 'undefined') {
-        return (
-            <style type="text/css">
-                {cssmin(styleSheet.rules().map(rule => rule.cssText).join(''))}
-            </style>
-        );
-    } else {
-        return null;
-    }
+	if (typeof window === 'undefined') {
+		return (
+			<style type="text/css">
+				{cssmin(
+					styleSheet
+						.rules()
+						.map(rule => rule.cssText)
+						.join('')
+				)}
+			</style>
+		);
+	} else {
+		return null;
+	}
 };
 
-const StylesContainer = ({ children }) =>
-    <Styles>
-        <Helmet>
-            <link
-                href="https://fonts.googleapis.com/css?family=Roboto:400,700,900"
-                rel="stylesheet"
-            />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </Helmet>
-        {children}
-        <ServerSideStiles />
-    </Styles>;
+const StylesContainer = ({ children }) => (
+	<Styles>
+		<Helmet>
+			<link
+				href="https://fonts.googleapis.com/css?family=Roboto:400,700,900"
+				rel="stylesheet"
+			/>
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+		</Helmet>
+		{children}
+		<ServerSideStiles />
+	</Styles>
+);
 
 StylesContainer.propTypes = {
-    children: PropTypes.node,
+	children: PropTypes.node,
 };
 
 export default StylesContainer;
