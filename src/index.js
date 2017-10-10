@@ -9,6 +9,7 @@ import StylesContainer from './styles'
 import Page from './layouts/Page'
 import PageError from './layouts/PageError'
 import HomePage from './layouts/Homepage'
+import Cinema from './layouts/Cinema'
 import AboutPage from './layouts/AboutPage'
 import JobsIndexPage from './layouts/JobsIndexPage'
 import JobPage from './layouts/JobPage'
@@ -54,6 +55,7 @@ const RoutesContainer = props => (
             Page,
             PageError,
             HomePage,
+            Cinema,
             AboutPage,
             JobsIndexPage,
             JobPage

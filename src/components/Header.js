@@ -94,8 +94,11 @@ class Header extends React.Component {
                             <img src="/assets/logo.svg" alt="Cinuru" />
                         </Link>
                     </span>
-                    <nav>
+                    <nav style={route === '/' ? {display: "none"} : {}}>
                         <ul>
+                            <li className={route === '/cinema/' ? 'active' : ''}>
+                                <Link to="cinema">Für Kinos</Link>
+                            </li>
                             <li className={route === '/about/' ? 'active' : ''}>
                                 <Link to="about">Über Uns</Link>
                             </li>

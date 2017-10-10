@@ -58,8 +58,9 @@ const Footer = () =>
             <div className="pages">
                 <ul>
                     <li>
-                        <Link to="/">Startseite</Link>
+                        <Link to="/cinema">Für Kinos</Link>
                     </li>
+
                     <li>
                         <Link to="/about">Über Uns</Link>
                     </li>
