@@ -1,18 +1,28 @@
-import React from 'react';
-import PropTypes from 'proptypes';
+import React from 'react'
+import PropTypes from 'proptypes'
 
-import Container from './Container';
+import Container from './Container'
 
-const HomePage = props => (
-	<Container {...props}>
-		<div>
-			<iframe src="http://85.214.78.13:3000/" width="100%" height="700px" />
-		</div>
-	</Container>
-);
+import HeroSection from '../components/HeroSection'
+import ProductSection from '../components/ProductSection'
+import DataSection from '../components/DataSection'
+import PrivacySection from '../components/PrivacySection'
+import ContactSection from '../components/ContactSection'
+
+const HomePage = (props) => (
+    <Container { ...props }>
+        <div>
+            <HeroSection { ...props.head.sections.hero }/>
+            <ProductSection { ...props.head.sections.product }/>
+            <DataSection { ...props.head.sections.data }/>
+            <PrivacySection { ...props.head.sections.privacy }/>
+            <ContactSection { ...props.head.sections.contact }/>
+        </div>
+    </Container>
+)
 
 HomePage.propTypes = {
-	head: PropTypes.object.isRequired,
-};
+    head: PropTypes.object.isRequired
+}
 
-export default HomePage;
+export default HomePage
