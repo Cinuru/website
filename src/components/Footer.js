@@ -19,7 +19,7 @@ const Wrapper = styled.footer`
             padding: 0;
             li {
                 display: inline-block;
-                margin: 0 1rem;
+                margin: 0.5rem 1rem;
                 transition: all 0.15s;
                 &:hover,
                 &:active,
