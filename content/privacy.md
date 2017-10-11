@@ -103,7 +103,7 @@ In einigen Kinos bietet Cinuru dir die Möglichkeit Kinotickets bei dem Onlinesh
 
 ### 5.5. Comtrada
 
-In einigen Kinos bietet Cinuru dir die Möglichkeit Kinotickets bei dem Onlineshop Comtrada zu erwerben. Der Onlineshop wird von der Compeso GmbH betrieben. Mit der Nutzung dieses Dienstes, erklärst du dich mit den Datenschutzbestimmungen von Comtrada einverstanden, diese findest du unter [Datenschutzbestimmungen von Comtrada] (https://lumosnidda.cloudticket.net/center/Lumos-Lichtspiel/datenschutz/shop.htm).
+In einigen Kinos bietet Cinuru dir die Möglichkeit Kinotickets bei dem Onlineshop Comtrada zu erwerben. Der Onlineshop wird von der Compeso GmbH betrieben. Mit der Nutzung dieses Dienstes, erklärst du dich mit den Datenschutzbestimmungen von Comtrada einverstanden, diese findest du unter [Datenschutzbestimmungen von Comtrada](https://lumosnidda.cloudticket.net/center/Lumos-Lichtspiel/datenschutz/shop.htm).
 
 
 ### 5.6 Youtube
