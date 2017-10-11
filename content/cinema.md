@@ -1,31 +1,31 @@
 ---
-metaTitle: CRM for cinemas
+metaTitle: CRM für Kinos
 layout: Cinema
 sections:
     hero:
-        title: "Who is this audience that everyone is talking about?"
+        title: "Wer ist dieses Publikum, von dem alle reden?"
         img: /assets/hero.svg
-        highlight: "Get to know your visitors and start a relationship."
-        cta: "Contact us."
+        highlight: "Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung."
+        cta: "Kontaktieren Sie uns."
     product:
-        title: "Make your visitors into Kinofreunden"
+        title: "Machen Sie Ihre Besucher zu Kinofreunden"
         img: /assets/app.png
         text:
-            - "A playful customer loyalty program right on the smartphone."
-            - "With Cinuru, Kinobosucher can evaluate films and trailers, collect points and redeem them for attractive bonuses, creating a direct channel to your visitors, which will remind them of their favorite films for filming and invite them to the cinema with special offers and events . "
+            - "Ein spielerisches Kundenbindungs-Programm direkt auf dem Smartphone."
+            - "Mit Cinuru können Kinobesucher Filme und Trailer bewerten, Punkte sammeln und gegen attraktive Prämien einlösen. Es entsteht so ein direkter Kanal zu Ihren Besuchern, über den Sie diese an ihre Lieblingsfilme zum Filmstart erinnern und sie mit besonderen Angeboten und Events ins Kino einladen können."
     data:
-        title: "Data-Based Customer Relationship Management for Cinemas"
+        title: "Datenbasiertes Customer Relationship Management für Kinos"
         img: /assets/data.svg
         text:
-            - "Digital interfaces between the cinema and the visitors enable the information exchange along the entire Customer Journey. Get to know your regular customers and win new ones."
-            - "The core of the tool is a White Label customer loyalty program for your cinema, which allows your visitors to evaluate trailers and films, collect points and redeem them in attractive premiums."
-        highlight: "We help you to evaluate the data and thus get in contact with your visitors."
+            - "Digitale Schnittstellen zwischen Kino und Besucher ermöglichen den Informationsaustausch entlang der gesamten Customer Journey. Lernen Sie Ihre Stammkunden kennen und gewinnen Sie neue."
+            - "Kern des Tools ist ein White Label Kundenbindungs- Programm für ihr Kino. Hiermit können Ihre Besucher Trailer und Filme bewerten, Punkte sammeln und in attraktive Prämien einlösen."
+        highlight: "Wir helfen Ihnen die Daten auszuwerten und so mit Ihren Besuchern in Kontakt zu treten."
     privacy:
-        title: "Relations require trust"
+        title: "Beziehungen erfordern Vertrauen"
         img: /assets/privacy.svg
         text:
-            - "Cinuru allows the visitor to give their opinion and to get in touch with his cinema. The top premise in the evaluation of the information is the consent of the individual users as well as an openness when dealing with the data."
-        highlight: "Cinuru stands for a trusting relationship between cinema and visitors."
-    CONTACT:
-        cta: "Contact us."
+            - "Cinuru ermöglicht es dem Besucher seine Meinung abzugeben und mit seinem Kino in Kontakt zu treten. Oberste Prämisse bei der Auswertung der Informationen ist die Zustimmung der einzelnen Nutzer sowie eine Offenheit beim Umgang mit den Daten."
+        highlight: "Cinuru steht für eine vertrauensvolle Beziehung zwischen Kino und Besucher."
+    contact:
+        cta: "Kontaktieren Sie uns."
 ---
