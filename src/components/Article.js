@@ -86,6 +86,9 @@ const Styles = styled.article`
             }
         }
     }
+    a {
+      text-decoration: underline;
+   }
 `;
 
 const Article = ({ title, heroImg, children }) =>
