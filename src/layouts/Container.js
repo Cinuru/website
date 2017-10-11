@@ -8,10 +8,9 @@ import Footer from '../components/Footer'
 import Loading from '../components/Loading'
 
 const Main = styled.main`
-    padding: 3.5rem 0 0 0;
-    min-height: 85vh;
+    padding: ${p => p.isHome ? 0 : 5.5}rem 0;
     @media(max-width: 420px) {
-        padding: 3.5rem 0 0 0;
+        padding: ${p => p.isHome ? 0 : 3.5}rem 0;
     }
     .phenomic-HeadingAnchor {
         display: none;
@@ -46,8 +45,10 @@ const Container = ({ head, children, isLoading, __url }) =>
                   <meta property="og:image" content={head.metaImage || defaultMeta.image} />
                   <meta property="og:description" content={head.metaDescription || defaultMeta.description} />
               </Helmet>
-              <Header route={__url} />
-              <Main>
+              {(__url !== '/') &&
+                <Header route={__url} />
+              }
+              <Main isHome={__url === '/'}>
                   {children}
               </Main>
               <Footer />
