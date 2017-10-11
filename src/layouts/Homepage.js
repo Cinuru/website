@@ -21,7 +21,6 @@ const Logo = styled.span`
 						width: auto;
 						height: 2rem;
 				}
-		}
 `
 
 const HomePage = props => (
