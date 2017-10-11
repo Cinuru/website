@@ -56,7 +56,7 @@ const Wrapper = styled.header`
         }
     }
     @media (max-width: 420px) {
-        padding: 1rem 2rem;
+        padding: 1.25rem 2rem;
     }
     @media (max-width: 350px) {
         font-size: 0.8rem;
