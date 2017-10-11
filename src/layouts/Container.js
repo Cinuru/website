@@ -8,10 +8,10 @@ import Footer from '../components/Footer'
 import Loading from '../components/Loading'
 
 const Main = styled.main`
-    padding: 5.5rem 0;
-    min-height: 90vh;
+    padding: 3.5rem 0 0 0;
+    min-height: 85vh;
     @media(max-width: 420px) {
-        padding: 3.5rem 0;
+        padding: 3.5rem 0 0 0;
     }
     .phenomic-HeadingAnchor {
         display: none;
