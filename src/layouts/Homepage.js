@@ -33,7 +33,7 @@ const HomePage = props => (
 					</Link>
 			</Logo>
 			<iframe
-				src="http://localhost:3000/"
+				src="http://85.214.78.13:3000/"
 				width="100%"
 				height="660px"
 				allowTransparency="true"
