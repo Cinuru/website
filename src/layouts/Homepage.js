@@ -27,7 +27,7 @@ const HomePage = props => (
 					</Link>
 			</Logo>
 			<iframe
-				src="https://filmetry.com:3000"
+				src={props.head.iframeSrc}
 				width="100%"
 				height="660px"
 				allowTransparency="true"
