@@ -9,6 +9,8 @@ import Loading from '../components/Loading'
 
 const Main = styled.main`
     padding: ${p => p.isHome ? 0 : 5.5}rem 0;
+    min-height: 90vh;
+    background: ${p => p.isHome ? 'linear-gradient(to bottom, #2dd7d3, #8c7ddd)' : 'white'};
     @media(max-width: 420px) {
         padding: ${p => p.isHome ? 0 : 3.5}rem 0;
     }

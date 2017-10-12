@@ -5,10 +5,6 @@ import styled from 'styled-components'
 import Container from './Container'
 import { Link } from 'phenomic'
 
-const Boarding = styled.div`
-	background: linear-gradient(to bottom, #2dd7d3, #8c7ddd);
-`
-
 const Logo = styled.span`
 		    padding: 1rem 2rem;
 				display: inline-block;
@@ -25,7 +21,6 @@ const Logo = styled.span`
 
 const HomePage = props => (
 	<Container {...props}>
-		<Boarding>
 			<Logo>
 					<Link to="/">
 							<img src="/assets/logo.svg" alt="Cinuru" />
@@ -37,7 +32,6 @@ const HomePage = props => (
 				height="660px"
 				allowTransparency="true"
 			/>
-		</Boarding>
 	</Container>
 );
 
