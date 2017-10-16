@@ -38,11 +38,12 @@ const HomePage = props => (
 			<Header>
 					<Link to="/">
 							<img src="/assets/logoWhite.svg" alt="Cinuru" />
-							<Tagline>Dein Kino. Dein Guru.</Tagline>
+							<Tagline>
+								{props.head.tagline}
+							</Tagline>
 					</Link>
 			</Header>
-			<BoardingSection
-				iframeSrc={props.head.iframeSrc}
+			<BoardingSection {...props.head}
 			/>
 	</Container>
 );

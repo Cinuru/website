@@ -86,26 +86,22 @@ const Feedback = styled.p`
   text-shadow: 0px 1px #909090;
 `
 
-const BoardingSection = ({iframeSrc}) => (
+const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascotImg, formHeader, formNote, cinemaHeader, cinemaImage, feedbackMail, feedback}) => (
         <Grid>
           <Column>
             <Description>
               <p>
-                Mit der neuen App deines Kinos kannst du deinen
-                nächsten Kinobesuch
-                einfach und unkompliziert planen.
+                {firstDescription}
               </p>
               <p>
-                Schon bald wird Cinuru dir Filme empfehlen,
-                dich an Filmstarts erinnern und tolle Angebote
-                für dich bereit halten.
+                {secondDescription}
               </p>
             </Description>
-            <Mascot src="/assets/mascotHome.png" alt="Hi." />
+            <Mascot src={mascotImg} alt="Hi." />
           </Column>
           <Column>
             <FormHeader>
-              Melde dich an und werde Betatester.
+              {formHeader}
             </FormHeader>
             <iframe
               src={iframeSrc}
@@ -114,33 +110,39 @@ const BoardingSection = ({iframeSrc}) => (
               allowTransparency="true"
             />
             <FormNote>
-              * Wir nutzen diese Informationen lediglich,
-              um dich zum Betatest der App einladen zu können und
-              dich eventuell per Email nach Feedback zur App zu befragen.
-              Wenn du die App nicht mehr nutzen möchtest, kannst du sie löschen.
-              Zur Löschung deiner Daten aus unserem System,
-              sende uns bitte eine Email an: datenschutz@cinuru.com.
+              {formNote}
             </FormNote>
             <CinemaHeader>
-              Cinuru findest du in ausgewählten Kinos.
+              {cinemaHeader}
             </CinemaHeader>
             <Link to="https://www.scala-kino.net">
-              <img src="/assets/scalaLogo.png" alt="Scala Lüneburg." style={{width: "100px"}} />
+              <img src={cinemaImage} alt="Scala Lüneburg." style={{width: "100px"}} />
             </Link>
             <Feedback>
-                Du hast die App bereits? Was können wir besser machen?
-               Was wünscht du dir in einer Kinoapp? Sende uns Feedback.
+               {feedback}
                <Link to="mailto:support@cinuru.com">
-                 support@cinuru.com
+                 {feedbackMail}
                </Link>
             </Feedback>
           </Column>
         </Grid>
 )
 
+/*
+  TODO See if it's possible to remove some of these
+*/
 BoardingSection.propTypes = {
     iframeSrc: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
+    content: PropTypes.string.isRequired,
+    firstDescription: PropTypes.string,
+    secondDescription: PropTypes.string,
+    mascotImg: PropTypes.string,
+    formHeader: PropTypes.string,
+    formNote: PropTypes.string,
+    cinemaHeader: PropTypes.string,
+    cinemaImage: PropTypes.string,
+    feedbackMail: PropTypes.string,
+    feedback: PropTypes.string,
 }
 
 export default BoardingSection
