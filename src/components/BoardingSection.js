@@ -12,56 +12,58 @@ const Grid = styled.div`
   @media (min-width: 501px) {
       flex-direction: row;
   }
-  justify-content: space-around;
-  align-items: stretch;
+  padding-bottom: 2rem;
 `
 
 const Column = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   align-items: center;
 `
 
 const Mascot = styled.img`
-  width: 110px;
+  width: 150px;
 `
 
 const Description = styled.p`
   padding: 0rem 2rem;
-  text-align:left;
+  text-align:center;
   color:#fbfbfb;
   font-size: 1rem;
   font-weight: 400;
   width: 350px;
   margin-top: -10px;
-  text-align: center;
   letter-spacing: 2px;
   text-shadow: 1px 1px #909090;
 `
 
 const FormHeader = styled.p`
-  padding: 0rem 2rem;
-  text-align:left;
+  @media (min-width: 501px) {
+    padding: 0rem 2rem;
+    margin-top: 0;
+  }
+  @media (max-width: 501px) {
+    padding: 0;
+    margin-top: 20px;
+  }
   color:#fbfbfb;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
   font-size: 13px,
   margin-bottom: -20px;
-  margin-top: 10px;
   letter-spacing: 2px;
   text-shadow: 1px 1px #909090;
 `
 
 const FormNote = styled.div`
-  width: 350px;
+  width: 320px;
+  text-align: center;
   margin-top: -1.4rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   color: #fbfbfb;
-  font-size: 0.4rem;
-  font-weight: 400;
+  font-size: 7px;
 `
 
 const CinemaHeader = styled.p`
@@ -70,18 +72,17 @@ const CinemaHeader = styled.p`
   color:#fbfbfb;
   font-size: 1rem;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   padding-top: 20px;
   border-top: 1px solid #f9f9f9;
 `
 
 const Feedback = styled.p`
-  padding: 0rem 2rem;
+  padding: 0rem 5rem;
   color:#fbfbfb;
   font-weight: 400;
   text-align: center;
-  font-size: 13px;
-  margin-top: 40px;
+  margin-top: 30px;
   letter-spacing: 2px;
   text-shadow: 0px 1px #909090;
 `
@@ -116,7 +117,7 @@ const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascot
               {cinemaHeader}
             </CinemaHeader>
             <Link to="https://www.scala-kino.net">
-              <img src={cinemaImage} alt="Scala Lüneburg." style={{width: "100px"}} />
+              <img src={cinemaImage} alt="Scala Lüneburg." style={{width: "110px"}} />
             </Link>
             <Feedback>
                {feedback}
