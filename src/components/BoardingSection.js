@@ -28,6 +28,12 @@ const Mascot = styled.img`
 `
 
 const Description = styled.div`
+  @media (min-width: 501px) {
+    padding: 0rem 1rem;
+  }
+  @media (max-width: 501px) {
+    padding: 0rem 4rem;
+  }
   padding: 0rem 2rem;
   text-align:center;
   color:#fbfbfb;
@@ -81,10 +87,10 @@ const CinemaHeader = styled.p`
 const Feedback = styled.div`
   padding: 0rem 5rem;
   color:#fbfbfb;
-  font-weight: 400;
   text-align: center;
   margin-top: 30px;
-  letter-spacing: 2px;
+  font-size: 15px;
+  letter-spacing: 1px;
   text-shadow: 0px 1px #909090;
 `
 
