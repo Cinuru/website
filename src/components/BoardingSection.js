@@ -24,9 +24,10 @@ const Column = styled.div`
 
 const Mascot = styled.img`
   width: 150px;
+  margin-top: 1rem;
 `
 
-const Description = styled.p`
+const Description = styled.div`
   padding: 0rem 2rem;
   text-align:center;
   color:#fbfbfb;
@@ -77,7 +78,7 @@ const CinemaHeader = styled.p`
   border-top: 1px solid #f9f9f9;
 `
 
-const Feedback = styled.p`
+const Feedback = styled.div`
   padding: 0rem 5rem;
   color:#fbfbfb;
   font-weight: 400;
@@ -134,7 +135,6 @@ const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascot
 */
 BoardingSection.propTypes = {
     iframeSrc: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
     firstDescription: PropTypes.string,
     secondDescription: PropTypes.string,
     mascotImg: PropTypes.string,
