@@ -2,12 +2,17 @@ import React from 'react'
 import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
+import BoardingSection from '../components/BoardingSection'
 import Container from './Container'
 import { Link } from 'phenomic'
 
-const Logo = styled.span`
+
+const Header = styled.div`
 		    padding: 1rem 2rem;
+				margin-bottom: 1.5rem;
 				display: inline-block;
+				width: 100%;
+				text-align: center;
 				&:hover,
 				&:active,
 				&:focus {
@@ -19,18 +24,25 @@ const Logo = styled.span`
 				}
 `
 
+const Tagline = styled.span`
+		    padding: 0.4rem 0 0 0.4rem;
+				display: inline-block;
+				width: 100%;
+				color: #FFFFFF;
+				font-size: 0.7rem;
+				text-align: center;
+`
+
 const HomePage = props => (
 	<Container {...props}>
-			<Logo>
+			<Header>
 					<Link to="/">
-							<img src="/assets/logo.svg" alt="Cinuru" />
+							<img src="/assets/logoWhite.svg" alt="Cinuru" />
+							<Tagline>Dein Kino. Dein Guru.</Tagline>
 					</Link>
-			</Logo>
-			<iframe
-				src={props.head.iframeSrc}
-				width="100%"
-				height="660px"
-				allowTransparency="true"
+			</Header>
+			<BoardingSection
+				iframeSrc={props.head.iframeSrc}
 			/>
 	</Container>
 );
