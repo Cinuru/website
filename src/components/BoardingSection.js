@@ -42,7 +42,6 @@ const Description = styled.div`
   width: 350px;
   margin-top: -10px;
   letter-spacing: 2px;
-  text-shadow: 1px 1px #909090;
 `
 
 const FormHeader = styled.p`
@@ -61,7 +60,6 @@ const FormHeader = styled.p`
   font-size: 13px,
   margin-bottom: -20px;
   letter-spacing: 2px;
-  text-shadow: 1px 1px #909090;
 `
 
 const FormNote = styled.div`
@@ -91,7 +89,6 @@ const Feedback = styled.div`
   margin-top: 30px;
   font-size: 15px;
   letter-spacing: 1px;
-  text-shadow: 0px 1px #909090;
 `
 
 const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascotImg, formHeader, formNote, cinemaHeader, cinemaImage, feedbackMail, feedback}) => (
