@@ -72,14 +72,24 @@ const FormNote = styled.div`
 `
 
 const CinemaHeader = styled.p`
-  padding: 0rem 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 0rem;
   text-align:left;
   color:#fbfbfb;
   font-size: 1rem;
   font-weight: 400;
   font-size: 1rem;
-  padding-top: 20px;
   border-top: 1px solid #f9f9f9;
+`
+
+const CinemaList = styled.p`
+  padding: 0rem 2rem;
+  margin: 0.2rem 0;
+  text-align:center;
+  color:#fbfbfb;
+  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
 `
 
 const Feedback = styled.div`
@@ -91,7 +101,7 @@ const Feedback = styled.div`
   letter-spacing: 1px;
 `
 
-const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascotImg, formHeader, formNote, cinemaHeader, cinemaImage, feedbackMail, feedback}) => (
+const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascotImg, formHeader, formNote, cinemaHeader, feedbackMail, feedback, cinemaList}) => (
         <Grid>
           <Column>
             <Description>
@@ -120,9 +130,10 @@ const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascot
             <CinemaHeader>
               {cinemaHeader}
             </CinemaHeader>
-            <Link to="https://www.scala-kino.net">
-              <img src={cinemaImage} alt="Scala Lüneburg." style={{width: "110px"}} />
-            </Link>
+            <CinemaList>
+              {cinemaList}
+            </CinemaList>
+
             <Feedback>
                {feedback}
                <Link to="mailto:support@cinuru.com">
@@ -144,7 +155,7 @@ BoardingSection.propTypes = {
     formHeader: PropTypes.string,
     formNote: PropTypes.string,
     cinemaHeader: PropTypes.string,
-    cinemaImage: PropTypes.string,
+    cinemaList: PropTypes.string,
     feedbackMail: PropTypes.string,
     feedback: PropTypes.string,
 }
