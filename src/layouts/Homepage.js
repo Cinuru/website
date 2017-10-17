@@ -20,7 +20,8 @@ const Header = styled.div`
 				}
 				img {
 						width: auto;
-						height: 2rem;
+						height: 4.2rem;
+						margin-bottom: -0.5rem;
 				}
 `
 
@@ -37,7 +38,7 @@ const HomePage = props => (
 	<Container {...props}>
 			<Header>
 					<Link to="/">
-							<img src="/assets/logoWhite.svg" alt="Cinuru" />
+							<img src="/assets/logoVertical.svg" alt="Cinuru" />
 							<Tagline>
 								{props.head.tagline}
 							</Tagline>
