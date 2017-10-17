@@ -58,7 +58,7 @@ const FormHeader = styled.p`
   font-weight: 400;
   text-align: center;
   font-size: 13px,
-  margin-bottom: -20px;
+  margin-bottom: -2px;
   letter-spacing: 2px;
 `
 
@@ -101,6 +101,31 @@ const Feedback = styled.div`
   letter-spacing: 1px;
 `
 
+const BoardiOS = styled.button`
+  padding: 0.2rem 2rem;
+  color:#fbfbfb;
+  text-align: center;
+  border: 0;
+  height: 2.9rem;
+  width: 10rem;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.25);
+`
+
+const AppleIcon = styled.img`
+  width: 1.8rem;
+`
+
+const ButtonText = styled.span`
+  line-height: 2rem;
+  margin-left: 0.4rem;
+  font-size: 1.4rem;
+`
+
+const BoardingLinks = styled.div`
+  margin-top: 2rem;
+`
+
 const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascotImg, formHeader, formNote, cinemaHeader, feedbackMail, feedback, cinemaList}) => (
         <Grid>
           <Column>
@@ -118,22 +143,21 @@ const BoardingSection = ({iframeSrc, firstDescription, secondDescription, mascot
             <FormHeader>
               {formHeader}
             </FormHeader>
-            <iframe
-              src={iframeSrc}
-              width="330px"
-              height="270px"
-              allowTransparency="true"
-            />
-            <FormNote>
-              {formNote}
-            </FormNote>
+            <BoardingLinks>
+              <Link to="/boardingiOS">
+                <BoardiOS>
+                  <AppleIcon src="/assets/apple.svg" alt="Apple"/>
+                  <ButtonText>iOS</ButtonText>
+
+                </BoardiOS>
+              </Link>
+            </BoardingLinks>
             <CinemaHeader>
               {cinemaHeader}
             </CinemaHeader>
             <CinemaList>
               {cinemaList}
             </CinemaList>
-
             <Feedback>
                {feedback}
                <Link to="mailto:support@cinuru.com">

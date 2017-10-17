@@ -10,6 +10,7 @@ import Page from './layouts/Page'
 import PageError from './layouts/PageError'
 import HomePage from './layouts/Homepage'
 import Cinema from './layouts/Cinema'
+import BoardingiOS from './layouts/BoardingiOS'
 import AboutPage from './layouts/AboutPage'
 import JobsIndexPage from './layouts/JobsIndexPage'
 import JobPage from './layouts/JobPage'
@@ -56,6 +57,7 @@ const RoutesContainer = props => (
             PageError,
             HomePage,
             Cinema,
+            BoardingiOS,
             AboutPage,
             JobsIndexPage,
             JobPage

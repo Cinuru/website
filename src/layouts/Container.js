@@ -47,10 +47,10 @@ const Container = ({ head, children, isLoading, __url }) =>
                   <meta property="og:image" content={head.metaImage || defaultMeta.image} />
                   <meta property="og:description" content={head.metaDescription || defaultMeta.description} />
               </Helmet>
-              {(__url !== '/') &&
+              {(__url !== '/' && __url !== '/boardingiOS/') &&
                 <Header route={__url} />
               }
-              <Main isHome={__url === '/'}>
+              <Main isHome={__url === '/' || __url === '/boardingiOS/'}>
                   {children}
               </Main>
               <Footer />

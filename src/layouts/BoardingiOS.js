@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'proptypes'
 import styled from 'styled-components'
 
-import BoardingSection from '../components/BoardingSection'
+import BoardingSectioniOS from '../components/BoardingSectioniOS'
 import Container from './Container'
 import { Link } from 'phenomic'
 
@@ -34,7 +34,7 @@ const Tagline = styled.span`
 				text-align: center;
 `
 
-const HomePage = props => (
+const BoardingiOS = props => (
 	<Container {...props}>
 			<Header>
 					<Link to="/">
@@ -44,12 +44,12 @@ const HomePage = props => (
 							</Tagline>
 					</Link>
 			</Header>
-			<BoardingSection {...props.head} />
+			<BoardingSectioniOS {...props.head} />
 	</Container>
 );
 
-HomePage.propTypes = {
+BoardingiOS.propTypes = {
 	head: PropTypes.object.isRequired,
 };
 
-export default HomePage;
+export default BoardingiOS;
