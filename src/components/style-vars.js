@@ -10,17 +10,17 @@ export const text = '#1A1D24';
 
 // mixins
 export const clearfix = css`
-    &::after {
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
-    }
+	&::after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: ' ';
+		clear: both;
+		height: 0;
+	}
 `;
 export const container = css`
-    width: 100%;
-    max-width: 60rem;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 60rem;
+	margin: 0 auto;
 `;

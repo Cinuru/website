@@ -96,11 +96,11 @@ class Header extends React.Component {
                     </span>
                     <nav>
                         <ul>
+                            <li className={route === '/cinema/' ? 'active' : ''}>
+                                <Link to="cinema">Für Kinos</Link>
+                            </li>
                             <li className={route === '/about/' ? 'active' : ''}>
                                 <Link to="about">Über Uns</Link>
-                            </li>
-                            <li className={route === '/contact/' ? 'active' : ''}>
-                                <Link to="contact">Kontakt</Link>
                             </li>
                         </ul>
                     </nav>

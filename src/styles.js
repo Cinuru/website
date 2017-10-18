@@ -41,6 +41,9 @@ injectGlobal`
         color: inherit;
         text-decoration: none;
     }
+    iframe {
+        border-width: 0px;
+    }
 `;
 
 const Styles = styled.div`

@@ -76,7 +76,6 @@ const Styles = styled.article`
         img {
             width: 120%;
             margin-left: -10%;
-            margin-bottom: 2rem;
         }
         .hero {
             margin-top: 0;
