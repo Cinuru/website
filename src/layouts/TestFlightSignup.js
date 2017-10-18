@@ -26,7 +26,7 @@ const TestFlightSignup = ({ head: { title, formIframe, disclaimer, ...head }, ..
 	<Container {...{ head, ...props }}>
 		<Wrapper>
 			<h1>{title}</h1>
-	<h3>Teilweise kommt es gerade zu Schwierigkeiten beim Versenden der Einladungen. Falls dir kein Teilnahmeformular angezeigt wird, sende uns bitte eine E-Mail an support@cinuru.com und wir werden dich umgehend einladen.</h3>
+	<div>Teilweise kommt es gerade zu Schwierigkeiten beim Versenden der Einladungen. Falls dir kein Teilnahmeformular angezeigt wird, sende uns bitte eine E-Mail an support@cinuru.com und wir werden dich umgehend einladen.</div>
 	
 			<iframe src={formIframe} allowTransparency="true" />
 			<p>{disclaimer}</p>
