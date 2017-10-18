@@ -19,7 +19,7 @@ const Main = styled.main`
 	}
 `;
 
-const pageUrl = 'https://cinuru.com/';
+const pageUrl = 'https://cinuru.com';
 
 const defaultMeta = {
 	description:
