@@ -67,11 +67,11 @@ const HeroSection = ({ title, img, highlight, cta }) => (
 			<Button href="mailto:contact@cinuru.com" color={brand}>
 				{cta}
 			</Button>
-			<p>
+			{/* <p>
 				Wir sind auf der Filmkunstmesse in Leipzig. Besuchen Sie uns Donnerstag zwischen 12:00
 				und 14:00 in der Business Lounge oder machen Sie einen Termin aus.
 			</p>
-			<img className="congress-logo" src="/assets/filmkunstmesse.svg" alt="filmkunstmesse" />
+			<img className="congress-logo" src="/assets/filmkunstmesse.svg" alt="filmkunstmesse" /> */}
 		</div>
 	</Styles>
 );
