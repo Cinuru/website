@@ -1,6 +1,6 @@
 ---
 layout: HomePage
-metaTitle: Cinuru App
+metaTitle: "Dein Kino. Dein Guru."
 iframeSrc: https://filmetry.com:3000
 tagline: Dein Kino. Dein Guru.
 mascotImg: /assets/mascotHome.png

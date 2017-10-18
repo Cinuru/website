@@ -23,10 +23,10 @@ const pageUrl = 'https://cinuru.com';
 
 const defaultMeta = {
 	description:
-		'Cinuru Research: Datengetriebenes Customer Relationship Management für Kinos. Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung.',
+		'Mit deiner persönlichen Kinoapp kannst du deinen Kinobesuch einfach und unkompliziert planen.',
 	image: 'assets/thumb.jpg',
-	url: 'https://cinuru.com/',
-	title: 'Cinuru CRM für Kinos',
+	url: '/',
+	title: 'Dein Kino. Dein Guru.',
 };
 
 const Container = ({ head, children, isLoading, __url }) =>
@@ -48,7 +48,7 @@ const Container = ({ head, children, isLoading, __url }) =>
 
 				<meta property="og:title" content={head.metaTitle || defaultMeta.title} />
 				<meta property="og:type" content="article" />
-				<meta property="og:url" content={`${pageUrl}${head.metaUrl || ''}`} />
+				<meta property="og:url" content={`${pageUrl}${head.metaUrl || '/social'}`} />
 				<meta property="og:image" content={head.metaImage || defaultMeta.image} />
 				<meta
 					property="og:description"
