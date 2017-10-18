@@ -43,13 +43,16 @@ const Container = ({ head, children, isLoading, __url }) =>
 				<meta name="twitter:creator" content="@cinuru" />
 				<meta
 					name="twitter:image"
-					content={`${pageUrl}${pageUrl + (head.metaImage || defaultMeta.image)}`}
+					content={`${pageUrl}${head.metaImage || defaultMeta.image}`}
 				/>
 
 				<meta property="og:title" content={head.metaTitle || defaultMeta.title} />
 				<meta property="og:type" content="article" />
 				<meta property="og:url" content={`${pageUrl}${head.metaUrl || '/social'}`} />
-				<meta property="og:image" content={pageUrl + (head.metaImage || defaultMeta.image)} />
+				<meta
+					property="og:image"
+					content={`${pageUrl}${head.metaImage || defaultMeta.image}`}
+				/>
 				<meta
 					property="og:description"
 					content={head.metaDescription || defaultMeta.description}
