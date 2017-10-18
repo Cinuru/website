@@ -121,9 +121,14 @@ const HomePage = ({
 					<strong>{feedback[0]}</strong>
 				</p>
 				{feedback.splice(1).map((text, i) => <p key={i}>{text}</p>)}
-				<a className="button" href={`mailto:${feedbackMail}`}>
+				<span
+					className="button"
+					onClick={() => {
+						window.location.href = `mailto:${feedbackMail}`;
+					}}
+				>
 					{feedbackCTA}
-				</a>
+				</span>
 			</div>
 
 			<div className="cinemas">

@@ -17,5 +17,5 @@ feedback:
    - Was können wir besser machen?
    - Was wünscht du dir in einer Kinoapp?
 feedbackCTA: Sende uns Feedback
-feedbackMail: contact@cinuru.com
+feedbackMail: feedback@cinuru.com
 ---
