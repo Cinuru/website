@@ -12,12 +12,12 @@ const Wrapper = styled.div`
 
 	iframe {
 		width: 100%;
-		height: 15rem;
+		height: 45rem;
 		@media (max-width: 700px) {
-			height: 18rem;
+			height: 54rem;
 		}
 		@media (max-width: 420px) {
-			height: 21rem;
+			height: 63rem;
 		}
 	}
 `;
