@@ -19,12 +19,12 @@ const Main = styled.main`
 	}
 `;
 
-const pageUrl = 'https://cinuru.com';
+const pageUrl = 'https://cinuru.com/';
 
 const defaultMeta = {
 	description:
 		'Mit deiner persönlichen Kinoapp kannst du deinen Kinobesuch einfach und unkompliziert planen.',
-	image: 'assets/thumb.jpg',
+	image: '/assets/thumb.jpg',
 	url: '/',
 	title: 'Dein Kino. Dein Guru.',
 };

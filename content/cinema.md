@@ -1,7 +1,7 @@
 ---
 metaTitle: CRM für Kinos
 metaDescription: "Cinuru Research: Datengetriebenes Customer Relationship Management für Kinos. Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung."
-metaImage: 'assets/thumb-cinema.jpg'
+metaImage: '/assets/thumb-cinema.jpg'
 metaUrl: /cinema
 layout: Cinema
 sections:
