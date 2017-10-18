@@ -8,10 +8,17 @@ const Wrapper = styled.div`
 	max-width: 30rem;
 	margin: 0 auto;
 	text-align: center;
+	padding: 2rem 1rem;
 
 	iframe {
 		width: 100%;
 		height: 15rem;
+		@media (max-width: 700px) {
+			height: 18rem;
+		}
+		@media (max-width: 420px) {
+			height: 21rem;
+		}
 	}
 `;
 
