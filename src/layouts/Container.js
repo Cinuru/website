@@ -55,8 +55,8 @@ const Container = ({ head, children, isLoading, __url }) =>
 					content={head.metaDescription || defaultMeta.description}
 				/>
 			</Helmet>
-			{__url !== '/' && <Header route={__url} />}
-			<Main isHome={__url === '/'}>{children}</Main>
+			{head.layout !== 'HomePage' && <Header route={__url} />}
+			<Main isHome={head.layout === 'HomePage'}>{children}</Main>
 			<Footer />
 		</div>
 	);
