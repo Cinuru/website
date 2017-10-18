@@ -14,10 +14,10 @@ const Wrapper = styled.div`
 		width: 100%;
 		height: 45rem;
 		@media (max-width: 700px) {
-			height: 54rem;
+			height: 50rem;
 		}
 		@media (max-width: 420px) {
-			height: 63rem;
+			height: 58rem;
 		}
 	}
 `;
@@ -26,8 +26,11 @@ const TestFlightSignup = ({ head: { title, formIframe, disclaimer, ...head }, ..
 	<Container {...{ head, ...props }}>
 		<Wrapper>
 			<h1>{title}</h1>
-	<div>Teilweise kommt es gerade zu Schwierigkeiten beim Versenden der Einladungen. Falls dir kein Teilnahmeformular angezeigt wird, sende uns bitte eine E-Mail an support@cinuru.com und wir werden dich umgehend einladen.</div>
-	
+			<p>
+				Teilweise kommt es gerade zu Schwierigkeiten beim Versenden der Einladungen. Falls dir
+				kein Teilnahmeformular angezeigt wird, sende uns bitte eine E-Mail an support@cinuru.com
+				und wir werden dich umgehend einladen.
+			</p>
 			<iframe src={formIframe} allowTransparency="true" />
 			<p>{disclaimer}</p>
 		</Wrapper>
