@@ -20,7 +20,11 @@ const GOOGLE_ANALYTICS_UA = 'UA-90630835-3';
 // generate autotrack with
 // autotrack -o content/assets/autotrack.js -p urlChangeTracker,cleanUrlTracker,outboundLinkTracker
 // see https://github.com/MoOx/phenomic/issues/428
-if (typeof window !== 'undefined') {
+if (
+	typeof window !== 'undefined' &&
+	location.hostname !== 'localhost' &&
+	location.hostname !== '127.0.0.1'
+) {
 	// prettier-ignore
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)}
 	ga.l = +new Date();
