@@ -12,6 +12,8 @@ cinemaHeader: "Cinuru findest du in ausgewählten Kinos:"
 playStoreLink: https://play.google.com/apps/testing/com.cinuru.app
 cinemas:
    - SCALA Programmkino, Lüneburg
+   - hackesche hoefe kino, Berlin
+   - Casino, Aschaffenburg
 feedback:
    - Du hast die App bereits?
    - Was können wir besser machen?
