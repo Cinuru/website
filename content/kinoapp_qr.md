@@ -9,7 +9,7 @@ description:
    - Schon bald wird Cinuru dir Filme empfehlen, dich an Filmstarts erinnern und tolle Angebote für dich bereit halten.
 callToAction: Werde Betatester
 cinemaHeader: "Cinuru findest du in ausgewählten Kinos:"
-playStoreLink: https://play.google.com/apps/testing/com.cinuru.app
+playStoreLink: "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.cinuru.app%26ddl%3D1%26pcampaignid%3Dweb_ddl_1"
 cinemas:
    - SCALA Programmkino, Lüneburg
    - hackesche hoefe kino, Berlin
