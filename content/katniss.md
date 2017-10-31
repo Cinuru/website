@@ -14,6 +14,10 @@ cinemas:
    - SCALA Programmkino, Lüneburg
    - hackesche hoefe kino, Berlin
    - Casino, Aschaffenburg
+   - Thalia Programmkino, Potsdam
+   - broadway filmtheater, Trier
+   - Lumos Lichtspiele & Lounge, Nidda
+   - Cinexx, Hachenburg
 feedback:
    - Du hast die App bereits?
    - Was können wir besser machen?
