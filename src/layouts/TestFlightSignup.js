@@ -4,15 +4,22 @@ import styled from 'styled-components';
 
 import Container from './Container';
 
+import { gray } from '../components/style-vars';
+
 const Wrapper = styled.div`
 	max-width: 30rem;
 	margin: 0 auto;
 	text-align: center;
 	padding: 2rem 1rem;
 
+	.disclaimer {
+		color: ${gray};
+		margin-top: 4rem;
+	}
+
 	iframe {
 		width: 100%;
-		height: 45rem;
+		height: 40rem;
 		@media (max-width: 700px) {
 			height: 50rem;
 		}
@@ -22,17 +29,17 @@ const Wrapper = styled.div`
 	}
 `;
 
-const TestFlightSignup = ({ head: { title, formIframe, disclaimer, ...head }, ...props }) => (
+const TestFlightSignup = ({
+	head: { title, preFormText, postFormText, formIframe, disclaimer, ...head },
+	...props
+}) => (
 	<Container {...{ head, ...props }}>
 		<Wrapper>
 			<h1>{title}</h1>
-			<p>
-				Teilweise kommt es gerade zu Schwierigkeiten beim Versenden der Einladungen. Falls dir
-				kein Teilnahmeformular angezeigt wird, sende uns bitte eine E-Mail an support@cinuru.com
-				und wir werden dich umgehend einladen.
-			</p>
+			{preFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<iframe src={formIframe} allowTransparency="true" />
-			<p>{disclaimer}</p>
+			{postFormText.map((text, i) => <p key={i}>{text}</p>)}
+			<p className="disclaimer">{disclaimer}</p>
 		</Wrapper>
 	</Container>
 );
