@@ -18,6 +18,8 @@ cinemas:
    - broadway filmtheater, Trier
    - Lumos Lichtspiele & Lounge, Nidda
    - Cinexx, Hachenburg
+   - Kino am Markt, Jena
+   - Kino im Schillerhof, Jena
 feedback:
    - Du hast die App bereits?
    - Was können wir besser machen?
