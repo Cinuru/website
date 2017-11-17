@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'proptypes';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 
 import Container from './Container';
 import Button from '../components/Button';
@@ -47,6 +48,9 @@ const TestFlightSignup = ({
 }) => (
 	<Container {...{ head, ...props }}>
 		<Wrapper>
+			<Helmet>
+				<meta name="referrer" content="origin" />
+			</Helmet>
 			<h1>{title}</h1>
 			{preFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<form method="POST" action="http://formspree.io/support@cinuru.com">
