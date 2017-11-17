@@ -44,6 +44,7 @@ const AppContainer = ({ children }) => (
 			<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&flags=gated" />
 			<script async src="https://www.google-analytics.com/analytics.js" />
 			<script async src="/assets/autotrack.js" />
+			<meta name="referrer" content="origin" />
 		</Helmet>
 		{children}
 	</StylesContainer>
