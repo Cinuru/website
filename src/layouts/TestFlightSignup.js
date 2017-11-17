@@ -36,9 +36,10 @@ const TestFlightSignup = ({
 	<Container {...{ head, ...props }}>
 		<Wrapper>
 			<h1>{title}</h1>
-			{preFormText.map((text, i) => <p key={i}>{text}</p>)}
-			<iframe src={formIframe} allowTransparency="true" />
-			{postFormText.map((text, i) => <p key={i}>{text}</p>)}
+	<div>Leider gibt es aktuell Probleme mit dem automatisierten Hinzufügen von Testern. Wenn du die App testen möchtest sende uns bitte eine Email an <a href="support@cinuru.com">support@cinuru.com</a>.
+	Wir bitten um Entschuldigung für die Unanehmlichkeiten und arbeiten mit Hockdurck an einer Lösung.
+	</div>
+			
 			<p className="disclaimer">{disclaimer}</p>
 		</Wrapper>
 	</Container>
