@@ -11,12 +11,10 @@ const Wrapper = styled.div`
 	margin: 0 auto;
 	text-align: center;
 	padding: 2rem 1rem;
-
 	.disclaimer {
 		color: ${gray};
 		margin-top: 4rem;
 	}
-
 	iframe {
 		width: 100%;
 		height: 40rem;
@@ -36,10 +34,13 @@ const TestFlightSignup = ({
 	<Container {...{ head, ...props }}>
 		<Wrapper>
 			<h1>{title}</h1>
-	<div>Leider gibt es aktuell Probleme mit dem automatisierten Hinzufügen von Testern. Wenn du die App testen möchtest sende uns bitte eine Email an <a href="support@cinuru.com">support@cinuru.com</a>.
-	Wir bitten um Entschuldigung für die Unanehmlichkeiten und arbeiten mit Hockdurck an einer Lösung.
-	</div>
-			
+			{preFormText.map((text, i) => <p key={i}>{text}</p>)}
+			<form method="POST" action="http://formspree.io/support@cinuru.com">
+  				<input type="text" name="name" placeholder="Dein Name (oder Pseudonym)">
+  				<input type="email" name="email" placeholder="Deine E-Mail Adresse">
+  				<button type="submit">Send</button>
+			</form>
+			{postFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<p className="disclaimer">{disclaimer}</p>
 		</Wrapper>
 	</Container>
