@@ -3,8 +3,9 @@ import PropTypes from 'proptypes';
 import styled from 'styled-components';
 
 import Container from './Container';
+import Button from '../components/Button';
 
-import { gray } from '../components/style-vars';
+import { gray, darkgray } from '../components/style-vars';
 
 const Wrapper = styled.div`
 	max-width: 30rem;
@@ -25,6 +26,19 @@ const Wrapper = styled.div`
 			height: 58rem;
 		}
 	}
+	input {
+		height: 3rem;
+		margin: 0.5rem 1rem;
+		width: 100%;
+		max-width: 20rem;
+		font-size: 1rem;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+		border: 2px solid ${gray};
+		&::placeholder {
+			color: ${darkgray};
+		}
+	}
 `;
 
 const TestFlightSignup = ({
@@ -39,7 +53,7 @@ const TestFlightSignup = ({
 				<input type="hidden" name="_language" value="de" />
 				<input type="text" name="name" placeholder="Dein Name (oder Pseudonym)" /> <br />
 				<input type="email" name="email" placeholder="Deine E-Mail Adresse" /> <br />
-				<button type="submit">Senden</button>
+				<Button type="submit">Senden</Button>
 			</form>
 			{postFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<p className="disclaimer">{disclaimer}</p>
