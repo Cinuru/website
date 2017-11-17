@@ -36,6 +36,7 @@ const TestFlightSignup = ({
 			<h1>{title}</h1>
 			{preFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<form method="POST" action="http://formspree.io/support@cinuru.com">
+				<input type="hidden" name="_language" value="de" />
 				<input type="text" name="name" placeholder="Dein Name (oder Pseudonym)" /> <br />
 				<input type="email" name="email" placeholder="Deine E-Mail Adresse" /> <br />
 				<button type="submit">Senden</button>
