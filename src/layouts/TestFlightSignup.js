@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const TestFlightSignup = ({
-	head: { title, preFormText, postFormText, formIframe, disclaimer, ...head },
+	head: { title, preFormText, postFormText, disclaimer, ...head },
 	...props
 }) => (
 	<Container {...{ head, ...props }}>
@@ -36,9 +36,9 @@ const TestFlightSignup = ({
 			<h1>{title}</h1>
 			{preFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<form method="POST" action="http://formspree.io/support@cinuru.com">
-  				<input type="text" name="name" placeholder="Dein Name (oder Pseudonym)">
-  				<input type="email" name="email" placeholder="Deine E-Mail Adresse">
-  				<button type="submit">Send</button>
+				<input type="text" name="name" placeholder="Dein Name (oder Pseudonym)" /> <br />
+				<input type="email" name="email" placeholder="Deine E-Mail Adresse" /> <br />
+				<button type="submit">Senden</button>
 			</form>
 			{postFormText.map((text, i) => <p key={i}>{text}</p>)}
 			<p className="disclaimer">{disclaimer}</p>
