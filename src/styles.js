@@ -55,9 +55,15 @@ injectGlobal`
 		text-align: left;
 	}
    button {
-      background: inherit;
 		color: inherit;
       font-size: inherit;
+      -webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+      outline: 0;
+      border: 0;
+      border: none;
+      border-radius: 0;
    }
 `;
 
