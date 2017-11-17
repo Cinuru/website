@@ -54,6 +54,11 @@ injectGlobal`
 		outline: 0;
 		text-align: left;
 	}
+   button {
+      background: inherit;
+		color: inherit;
+      font-size: inherit;
+   }
 `;
 
 const Styles = styled.div`
