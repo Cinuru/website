@@ -10,4 +10,4 @@ The website is build with [Phenomic](https://github.com/MoOx/phenomic), a static
 
 Dependencies are manages with [yarn](http://yarnpkg.com/) (or `npm`). To install the dependencies, simply run `yarn install`. To start a development server with life reloading, run `yarn start`.
 
-To deploy, simply run `yarn deploy`.
+To deploy, simply push to master.
