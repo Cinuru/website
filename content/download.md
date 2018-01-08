@@ -7,9 +7,10 @@ mascotImg: /assets/mascotHome.png
 description:
    - Mit der neuen App deines Kinos kannst du deinen nächsten Kinobesuch einfach und unkompliziert planen.
    - Schon bald wird Cinuru dir Filme empfehlen, dich an Filmstarts erinnern und tolle Angebote für dich bereit halten.
-callToAction: Werde Betatester
+callToAction: Jetzt App Installieren
 cinemaHeader: "Cinuru findest du in ausgewählten Kinos:"
 playStoreLink: "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.cinuru.app%26ddl%3D1%26pcampaignid%3Dweb_ddl_1"
+appStoreLink: "https://itunes.apple.com/us/app/cinuru/id1281946162?ls=1&mt=8"
 cinemas:
    - SCALA Programmkino, Lüneburg
    - hackesche hoefe kino, Berlin

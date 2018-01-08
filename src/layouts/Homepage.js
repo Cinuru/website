@@ -90,6 +90,7 @@ const HomePage = ({
 		mascotImg,
 		callToAction,
 		playStoreLink,
+		appStoreLink,
 		feedbackCTA,
 		feedbackMail,
 		feedback,
@@ -107,7 +108,7 @@ const HomePage = ({
 			<img className="mascot" src={mascotImg} alt="" />
 			<p className="title">{callToAction}</p>
 			<div className="store-links">
-				<Link to="/testflight-signup" className="button large">
+				<Link to={appStoreLink} className="button large">
 					<img src="/assets/apple.svg" alt="" />
 					<span>iOS</span>
 				</Link>
