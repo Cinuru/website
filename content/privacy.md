@@ -125,3 +125,12 @@ Die Trailer, welche dir von Cinuru angezeigt werden, stammen von Youtube. Zur Ei
 ### 5.8 Microsoft
 
 Um Cinuru stetig verbessern zu können und Reports zu erhalten, wenn es Probleme bei der Nutzung der App gibt, verwenden wir den Service Microsoft Mobile Center, welche von der Microsoft Corporation (Microsoft)  betrieben wird. Mit der Nutzung von Cinuru erklärst du dich damit einverstanden, dass automatisiert erhobene Daten, durch Microsoft erfasst und bearbeitet werden. Weitere Informationen findest du in den [Nutzungsbedingungen von Microsoft](https://azure.microsoft.com/de-de/support/legal/privacy-statement/germany/).
+
+### 5.9 Amazon Web Services
+
+Zum Versand von E-Mails nach der Registrierung in der App nutzt Cinuru Research den Amazon Simple Email Service (Amazon SES). Dies ist ein Angebot der Amazon Web Services Inc. (AWS). Zum Zwecke des Newsletter-Versands werden die E-Mail-Adressen der Nutzer temporär (während des Versandes) an einen Server (innerhalb der EU) der AWS übermittelt. Nähere Informationen zu Amazon SES sowie zur Datennutzung und -verarbeitung durch die AWS sind unter http://aws.amazon.com/de/ses/ sowie unter http://aws.amazon.com/de/privacy/ abrufbar.
+
+
+### 5.10 Formspree, Sendgrid
+
+Bei der Anmeldung zum Betatest werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage per E-Mail übertragen. Wir nutzen dafür den Mailservice Formspree (https://formspree.io/), welcher den Mailing-Service SendGrid verwendet. SendGrid ist ein Angebot der SendGrid, Inc., 1401 Walnut, Boulder, CO 80302, USA. Hierbei werden E-MailAdressen und Namen auf Servern dieser Anbieter gespeichert. Personenbezogene Daten dürfen jedoch von diesen Anbietern nicht für andere Zwecke als die Versendung von E-Mails im Auftrag von Smunch verwendet werden. Weitere Informationen zu Datenschutzbestimmungen von SendGrid finden Sie unter https://sendgrid.com/privacy.
