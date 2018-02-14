@@ -7,7 +7,7 @@ layout: Cinema
 sections:
     hero:
         title: "Wer ist dieses Publikum, von dem alle reden?"
-        img: /assets/hero.svg
+        img: /assets/Hero_GangimKino.png
         highlight: "Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung."
         cta: "Kontaktieren Sie uns."
     product:

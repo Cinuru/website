@@ -7,7 +7,7 @@ import { darkgray, text } from './style-vars';
 
 const Wrapper = styled.header`
 	z-index: 10;
-	background: ${p => (p.isHome ? (p.scrolled ? text : 'transparent') : 'white')};
+	background: ${p => (p.isHome ? text : 'white')};
 	color: ${p => (p.isHome ? 'white' : darkgray)};
 	padding: 1rem 2rem;
 	height: 4rem;
