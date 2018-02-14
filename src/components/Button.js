@@ -8,7 +8,7 @@ const Styles = styled.button`
 	cursor: pointer;
 	display: inline-block;
 	margin: 1rem auto;
-	background: linear-gradient(#1ee1d0, #878ddb);
+	background: linear-gradient(#3ccad3, #64a9d7);
 	color: white;
 	padding: 0.75rem 1rem;
 	border-radius: 0.5rem;
