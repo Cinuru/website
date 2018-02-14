@@ -30,11 +30,7 @@ let pages = [
 	'download.md',
 	'hhoefe_newsletter.md',
 ];
-const main = async () => {
-	pages.map(p => {
-		fs.removeSync('./content/' + p);
-		fs.copySync('./content/index.md', './content/' + p);
-	});
-};
-
-main();
+pages.map(p => {
+	fs.removeSync('./content/' + p);
+	fs.copySync('./content/index.md', './content/' + p);
+});
