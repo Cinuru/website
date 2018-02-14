@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'proptypes';
 import styled from 'styled-components';
 
-import { silver, container, clearfix } from './style-vars';
+import { container, clearfix } from './style-vars';
 
 const Styles = styled.section`
 	${container} max-width: 40rem;

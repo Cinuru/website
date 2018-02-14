@@ -104,7 +104,7 @@ const HomePage = ({
 		<Wrapper>
 			<img className="logo" src="/assets/logoVertical.svg" alt="Cinuru" />
 			<p className="tagline">{tagline}</p>
-			<div>{description.map((text, i) => <p key={i}>• {text}</p>)}</div>
+			<div>{description.map((text, i) => <p key={i}>{text}</p>)}</div>
 			<img className="mascot" src={mascotImg} alt="" />
 			<p className="title">{callToAction}</p>
 			<div className="store-links">
