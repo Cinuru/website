@@ -26,7 +26,7 @@ const defaultMeta = {
 		'Mit deiner persönlichen Kinoapp kannst du deinen Kinobesuch einfach und unkompliziert planen.',
 	image: '/assets/thumb.jpg',
 	url: '/',
-	title: 'Dein Kino. Dein Guru.',
+	title: 'Mit Cinuru wirst Du zum Kinoguru.',
 };
 
 const Container = ({ head, children, isLoading, __url }) =>

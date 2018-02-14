@@ -1,8 +1,8 @@
 ---
 layout: HomePage
-metaTitle: "Dein Kino. Dein Guru."
+metaTitle: "Mit Cinuru wirst Du zum Kinoguru."
 iframeSrc: https://filmetry.com:3000
-tagline: Dein Kino. Dein Guru.
+tagline: Mit Cinuru wirst Du zum Kinoguru.
 mascotImg: /assets/mascotHome.png
 description:
    - Mit der neuen App deines Kinos kannst du deinen nächsten Kinobesuch einfach und unkompliziert planen.

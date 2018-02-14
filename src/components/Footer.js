@@ -58,6 +58,9 @@ const Footer = () => (
 			<div className="pages">
 				<ul>
 					<li>
+						<Link to="/">Für Kinofans</Link>
+					</li>
+					<li>
 						<Link to="/cinema">Für Kinos</Link>
 					</li>
 
@@ -85,7 +88,7 @@ const Footer = () => (
 				</p>
 			</div>
 			<div className="supporters">
-				<h2>Gefördert Durch:</h2>
+				<h2>Unsere Partner:</h2>
 				<img src="/assets/supporters.png" alt="supported by" />
 			</div>
 		</div>
