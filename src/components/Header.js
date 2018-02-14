@@ -91,7 +91,7 @@ class Header extends React.Component {
 				<div className="container">
 					<span className="logo">
 						<Link to="/">
-							<img src={`/assets/logoName${isHome ? 'White' : ''}.svg`} alt="Cinuru" />
+							<img src={`/assets/logo${isHome ? 'White' : 'Black'}.png`} alt="Cinuru" />
 						</Link>
 					</span>
 					<nav>
