@@ -64,13 +64,17 @@ const HeroSection = ({ title, img, highlight, cta }) => (
 		</div>
 		<h2>{highlight}</h2>
 		<div className="calltoaction">
+			<p>
+				Cinuru Research auf der Berlinale: Vom 18. bis zum 20. haben wir ein PopUp Büro auf dem EFM
+				– besuchen Sie uns im Erdgeschoss des Martin Gropius Baus. Vom 20. nachmittags bis zum 22.
+				finden Sie uns in den Hackeschen Höfen bei den AG Screenings. Vereinbaren Sie einen Termin
+				mit uns.
+			</p>
 			<Button href="mailto:contact@cinuru.com" color={brand}>
 				{cta}
 			</Button>
-			{/* <p>
-				Wir sind auf der Filmkunstmesse in Leipzig. Besuchen Sie uns Donnerstag zwischen 12:00
-				und 14:00 in der Business Lounge oder machen Sie einen Termin aus.
-			</p>
+
+			{/*
 			<img className="congress-logo" src="/assets/filmkunstmesse.svg" alt="filmkunstmesse" /> */}
 		</div>
 	</Styles>

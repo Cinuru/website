@@ -79,7 +79,7 @@ const Footer = () => (
 				</ul>
 			</div>
 			<div className="address">
-				<p>Cinuru Research</p>
+				<p>Cinuru Research GmbH</p>
 				<p>contact@cinuru.com</p>
 				<p>
 					℅ Startbüro Filmuniversität<br />

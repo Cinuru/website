@@ -11,18 +11,16 @@ sections:
         highlight: "Lernen Sie Ihre Besucher kennen und starten Sie eine Beziehung."
         cta: "Kontaktieren Sie uns."
     product:
-        title: "Machen Sie Ihre Besucher zu Kinofreunden"
+        title: "Ein spielerisches Kundenbindungs-System für unabhängige Kinos"
         img: /assets/app.png
         text:
-            - "Ein spielerisches Kundenbindungs-Programm direkt auf dem Smartphone."
-            - "Mit Cinuru können Kinobesucher Filme und Trailer bewerten, Punkte sammeln und gegen attraktive Prämien einlösen. Es entsteht so ein direkter Kanal zu Ihren Besuchern, über den Sie diese an ihre Lieblingsfilme zum Filmstart erinnern und sie mit besonderen Angeboten und Events ins Kino einladen können."
+            - "Mit Cinuru können Kinobesucher Filme und Trailer bewerten, Punkte sammeln und gegen attraktive Prämien einlösen. So entsteht ein direkter Kanal zu jedem einzelnen Besucher. Erinnern Sie ihn, wenn ein passender Film startet und laden Sie ihn zu besonderen Angeboten und Events ins Kino ein."
     data:
-        title: "Datenbasiertes Customer Relationship Management für Kinos"
+        title: "Die einzige KinoApp, die Sie mit Ihren Besuchern verbindet."
         img: /assets/data.svg
         text:
-            - "Digitale Schnittstellen zwischen Kino und Besucher ermöglichen den Informationsaustausch entlang der gesamten Customer Journey. Lernen Sie Ihre Stammkunden kennen und gewinnen Sie neue."
-            - "Kern des Tools ist ein White Label Kundenbindungs- Programm für ihr Kino. Hiermit können Ihre Besucher Trailer und Filme bewerten, Punkte sammeln und in attraktive Prämien einlösen."
-        highlight: "Wir helfen Ihnen die Daten auszuwerten und so mit Ihren Besuchern in Kontakt zu treten."
+            - "Cinuru Research wertet die Informationen und Interessen ihrer Besucher aus und stellt Ihnen regelmäßig auf Ihr Kino angepasste Reports zur Verfügung. "
+        highlight: "Einblicke, die Ihnen beim lokalen Marketing und der Programmierung helfen werden."
     privacy:
         title: "Beziehungen erfordern Vertrauen"
         img: /assets/privacy.svg

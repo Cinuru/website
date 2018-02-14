@@ -5,11 +5,11 @@ layout: Page
 
 Sie erreichen uns am einfachsten via Email unter
 
-***[contact@cinuru.com](mailto:contact@cinuru.com)***
+**_[contact@cinuru.com](mailto:contact@cinuru.com)_**
 
 Unsere Büros befinden sich auf dem Studio Gelände Babelsberg
 
-***Cinuru Research UG<br/>
+**_Cinuru Research GmbH<br/>
 ℅ Startbüro Filmuniversität <br/>
 August-Bebel-Str. 26<br/>
-14482 Potsdam***
+14482 Potsdam_**
