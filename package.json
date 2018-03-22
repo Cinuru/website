@@ -48,6 +48,7 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
+    "mobile-detect": "^1.4.1",
     "polished": "^1.1.1",
     "react-icons": "^2.2.5",
     "react-topbar-progress-indicator": "^1.0.0",

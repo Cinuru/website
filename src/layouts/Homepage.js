@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'proptypes';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 
 import Container from './Container';
 import { Link } from 'phenomic';
+import MobileDetect from 'mobile-detect';
 
 const Wrapper = styled.div`
 	display: flex;
@@ -85,6 +87,7 @@ const Wrapper = styled.div`
 
 const HomePage = ({
 	head: {
+		redirectToStore,
 		description,
 		tagline,
 		mascotImg,
@@ -99,46 +102,58 @@ const HomePage = ({
 		...head
 	},
 	...props
-}) => (
-	<Container {...{ head, ...props }}>
-		<Wrapper>
-			<img className="logo" src="/assets/logoVertical.svg" alt="Cinuru" />
-			<p className="tagline">{tagline}</p>
-			<div>{description.map((text, i) => <p key={i}>{text}</p>)}</div>
-			<img className="mascot" src={mascotImg} alt="" />
-			<p className="title">{callToAction}</p>
-			<div className="store-links">
-				<Link to={appStoreLink} className="button large">
-					<img src="/assets/apple.svg" alt="" />
-					<span>iOS</span>
-				</Link>
-				<a href={playStoreLink} className="button large">
-					<img src="/assets/android.svg" alt="" />
-					<span>Android</span>
-				</a>
-			</div>
-			<div className="feedback">
-				<p>
-					<strong>{feedback[0]}</strong>
-				</p>
-				{feedback.splice(1).map((text, i) => <p key={i}>{text}</p>)}
-				<span
-					className="button"
-					onClick={() => {
-						window.location.href = `mailto:${feedbackMail}`;
-					}}
-				>
-					{feedbackCTA}
-				</span>
-			</div>
+}) => {
+	if (typeof window !== 'undefined' && redirectToStore) {
+		const os = new MobileDetect(window.navigator.userAgent).os();
+		if (os === 'AndroidOS') {
+			window.location.replace(playStoreLink);
+		} else if (os === 'iOS') {
+			window.location.replace(appStoreLink);
+		}
+	}
+	return (
+		<Container {...{ head, ...props }}>
+			<Helmet>
+				<meta name="apple-itunes-app" content="app-id=1281946162" />
+			</Helmet>
+			<Wrapper>
+				<img className="logo" src="/assets/logoVertical.svg" alt="Cinuru" />
+				<p className="tagline">{tagline}</p>
+				<div>{description.map((text, i) => <p key={i}>{text}</p>)}</div>
+				<img className="mascot" src={mascotImg} alt="" />
+				<p className="title">{callToAction}</p>
+				<div className="store-links">
+					<Link to={appStoreLink} className="button large">
+						<img src="/assets/apple.svg" alt="" />
+						<span>iOS</span>
+					</Link>
+					<a href={playStoreLink} className="button large">
+						<img src="/assets/android.svg" alt="" />
+						<span>Android</span>
+					</a>
+				</div>
+				<div className="feedback">
+					<p>
+						<strong>{feedback[0]}</strong>
+					</p>
+					{feedback.splice(1).map((text, i) => <p key={i}>{text}</p>)}
+					<span
+						className="button"
+						onClick={() => {
+							window.location.href = `mailto:${feedbackMail}`;
+						}}>
+						{feedbackCTA}
+					</span>
+				</div>
 
-			<div className="cinemas">
-				<p>{cinemaHeader}</p>
-				{cinemas.map((cinema, i) => <p key={i}>{cinema}</p>)}
-			</div>
-		</Wrapper>
-	</Container>
-);
+				<div className="cinemas">
+					<p>{cinemaHeader}</p>
+					{cinemas.map((cinema, i) => <p key={i}>{cinema}</p>)}
+				</div>
+			</Wrapper>
+		</Container>
+	);
+};
 
 HomePage.propTypes = {
 	head: PropTypes.shape({
@@ -152,7 +167,8 @@ HomePage.propTypes = {
 		feedback: PropTypes.arrayOf(PropTypes.string),
 		cinemaHeader: PropTypes.string,
 		cinemas: PropTypes.arrayOf(PropTypes.string),
-	}),
+		redirectToStore: PropTypes.bool
+	})
 };
 
 export default HomePage;

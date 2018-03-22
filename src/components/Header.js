@@ -16,7 +16,8 @@ const Wrapper = styled.header`
 	font-size: 0.9rem;
 	line-height: 2rem;
 	box-sizing: border-box;
-	${p => (p.scrolled ? 'box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);' : '')} .container {
+	${p =>
+		p.scrolled ? 'box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);' : ''} .container {
 		max-width: 50rem;
 		margin: 0 auto;
 	}
@@ -91,7 +92,10 @@ class Header extends React.Component {
 				<div className="container">
 					<span className="logo">
 						<Link to="/">
-							<img src={`/assets/logo${isHome ? 'White' : 'Black'}.png`} alt="Cinuru" />
+							<img
+								src={`/assets/logo${isHome ? 'White' : 'Black'}.png`}
+								alt="Cinuru"
+							/>
 						</Link>
 					</span>
 					<nav>
@@ -115,7 +119,7 @@ class Header extends React.Component {
 
 Header.propTypes = {
 	route: PropTypes.string,
-	isHome: PropTypes.string,
+	isHome: PropTypes.bool
 };
 
 export default Header;
