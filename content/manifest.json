@@ -1,0 +1,19 @@
+{
+	"name": "Cinuru Kino & Film",
+	"short_name": "Cinuru",
+	"lang": "de-DE",
+	"icons": [
+		{
+			"src": "/assets/icon.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		}
+	],
+	"prefer_related_applications": true,
+	"related_applications": [
+		{
+			"platform": "play",
+			"id": "com.cinuru.app"
+		}
+	]
+}
