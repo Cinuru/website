@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 	.summary {
 		line-height: 2rem;
 		text-align: left;
-		width: 28rem;
+		width: 32rem;
 		margin: 3rem auto;
 		h3 {
 			font-style: normal;
@@ -59,7 +59,7 @@ const Wrapper = styled.div`
 		.description {
 			display: inline-block;
 			text-align: left;
-			width: 22rem;
+			width: 26rem;
 		}
 	}
 	.file {
@@ -124,7 +124,7 @@ const JobPage = ({
 					</a>
 				</div>
 			</article>
-			<iframe src={typeform} />
+			{typeform && <iframe src={typeform} />}
 		</Wrapper>
 	</Container>
 );
@@ -132,7 +132,7 @@ const JobPage = ({
 JobPage.propTypes = {
 	head: PropTypes.object,
 	body: PropTypes.string,
-	isLoading: PropTypes.bool,
+	isLoading: PropTypes.bool
 };
 
 export default JobPage;
