@@ -7,6 +7,8 @@ import PhenomicLoaderFeedWebpackPlugin
 import PhenomicLoaderSitemapWebpackPlugin
   from "phenomic/lib/loader-sitemap-webpack-plugin"
 
+import CopyWebpackPlugin from "copy-webpack-plugin";
+
 import pkg from "./package.json"
 
 export default (config = {}) => {
@@ -64,6 +66,10 @@ export default (config = {}) => {
     },
 
     plugins: [
+      new CopyWebpackPlugin([
+        { from: "content/manifest.json", to: "dist/manifest.json" }
+      ]),
+      
       new PhenomicLoaderFeedWebpackPlugin({
         // here you define generic metadata for your feed
         feedsOptions: {
