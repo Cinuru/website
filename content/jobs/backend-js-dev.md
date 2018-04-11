@@ -1,5 +1,5 @@
 ---
-title: Backend & DevOps Guru
+title: Backend Developer (JS)
 subtitle: (full-time)
 pageTitle: Backend & DevOps Developer
 metaTitle: Backend & DevOps Developer
@@ -8,7 +8,7 @@ metaDescription: Join the Cinuru team and develop the next-generation cinema loy
 layout: JobPage
 <!-- typeform: https://cinuru.typeform.com/to/ESf0Dg
 metaImage: /assets/js-dev-thumb.jpg -->
-jobDescription: /assets/Fulltime%20Backend%20&%20DevOps%20Developer.pdf
+jobDescription: /assets/Fulltime%20Backend%20Developer.pdf
 summary:
     who: 'JS Backend Developer with Interest in DevOps'
     what: 'Node.js, GraphQL, PostgreSQL, AWS, DevOps'

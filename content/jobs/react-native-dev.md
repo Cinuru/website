@@ -1,5 +1,5 @@
 ---
-title: React Native Guru
+title: React Native Developer
 subtitle: (full-time)
 pageTitle: React Native Developer
 metaTitle: React Native Developer
