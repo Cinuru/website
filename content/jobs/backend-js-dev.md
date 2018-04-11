@@ -10,7 +10,7 @@ layout: JobPage
 metaImage: /assets/js-dev-thumb.jpg -->
 jobDescription: /assets/Fulltime%20Backend%20Developer.pdf
 summary:
-    who: 'JS Backend Developer with Interest in DevOps'
+    who: 'Backend Developer with strong JS Background'
     what: 'Node.js, GraphQL, PostgreSQL, AWS, DevOps'
     when: 'Flexible start date, ideally now'
     where: 'Studio Babelsberg near Berlin & Remote'
