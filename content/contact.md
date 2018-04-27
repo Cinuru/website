@@ -10,6 +10,5 @@ Sie erreichen uns am einfachsten via Email unter
 Unsere Büros befinden sich auf dem Studio Gelände Babelsberg
 
 **_Cinuru Research GmbH<br/>
-℅ Startbüro Filmuniversität <br/>
-August-Bebel-Str. 26<br/>
+August-Bebel-Str. 26-53<br/>
 14482 Potsdam_**

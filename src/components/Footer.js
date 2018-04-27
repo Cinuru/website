@@ -82,8 +82,7 @@ const Footer = () => (
 				<p>Cinuru Research GmbH</p>
 				<p>contact@cinuru.com</p>
 				<p>
-					℅ Startbüro Filmuniversität<br />
-					August-Bebel-Str. 26<br />
+					August-Bebel-Str. 26-53<br />
 					14482 Potsdam
 				</p>
 			</div>

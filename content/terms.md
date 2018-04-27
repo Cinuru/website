@@ -5,7 +5,7 @@ layout: Page
 
 ## 1. Allgemeines
 
-Durch Deine Registrierung schließt Du einen Nutzungsvertrag mit uns der Cinuru Research GmbH, August-Bebel-Str. 26, 14482 Potsdam, vergleiche dazu unser Impressum. Die Nutzung unserer App ist kostenfrei, einzelne Dienste wie z.B. der Ticketverkauf sind bei Inanspruchnahme kostenpflichtig. Wir werden die App regelmäßig erweitern und weiter verbessern und behalten uns vor das Angebot zu verändern, ohne dass es einer Ankündigung bedarf (vgl. 3.).
+Durch Deine Registrierung schließt Du einen Nutzungsvertrag mit uns der Cinuru Research GmbH, August-Bebel-Str. 26-53, 14482 Potsdam, vergleiche dazu unser Impressum. Die Nutzung unserer App ist kostenfrei, einzelne Dienste wie z.B. der Ticketverkauf sind bei Inanspruchnahme kostenpflichtig. Wir werden die App regelmäßig erweitern und weiter verbessern und behalten uns vor das Angebot zu verändern, ohne dass es einer Ankündigung bedarf (vgl. 3.).
 
 ## 2. Haftungsausschluss
 
