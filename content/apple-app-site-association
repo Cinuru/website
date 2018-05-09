@@ -50,7 +50,7 @@
         ]
       },
       {
-        "appID": "FBFGQXSCTQ.com.cinuru.app.staging"
+        "appID": "FBFGQXSCTQ.com.cinuru.app.staging",
         "paths": [
           "/discover",
           "/showtimes",
