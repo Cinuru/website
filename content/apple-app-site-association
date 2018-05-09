@@ -1,4 +1,3 @@
-
 {
   "webcredentials": {
     "apps": [
@@ -13,9 +12,64 @@
       {
         "appID": "FBFGQXSCTQ.com.cinuru.app",
         "paths": [
-          "*"
+          "/discover",
+          "/showtimes",
+          "/incinema",
+          "/profile",
+          "/search",
+          "/movie",
+          "/cinema",
+          "/settings",
+          "/trailer",
+          "/list",
+          "/vouchercatalog",
+          "/voucher",
+          "/bonushistory",
+          "/preshow",
+          "/scanner"
+        ]
+      },
+      {
+        "appID": "FBFGQXSCTQ.com.cinuru.app.debug",
+        "paths": [
+         "/discover",
+          "/showtimes",
+          "/incinema",
+          "/profile",
+          "/search",
+          "/movie",
+          "/cinema",
+          "/settings",
+          "/trailer",
+          "/list",
+          "/vouchercatalog",
+          "/voucher",
+          "/bonushistory",
+          "/preshow",
+          "/scanner"
+        ]
+      },
+      {
+        "appID": "FBFGQXSCTQ.com.cinuru.app.staging"
+        "paths": [
+          "/discover",
+          "/showtimes",
+          "/incinema",
+          "/profile",
+          "/search",
+          "/movie",
+          "/cinema",
+          "/settings",
+          "/trailer",
+          "/list",
+          "/vouchercatalog",
+          "/voucher",
+          "/bonushistory",
+          "/preshow",
+          "/scanner"
         ]
       }
     ]
   }
 }
+
