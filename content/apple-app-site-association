@@ -1,0 +1,21 @@
+
+{
+  "webcredentials": {
+    "apps": [
+      "FBFGQXSCTQ.com.cinuru.app",
+      "FBFGQXSCTQ.com.cinuru.app.debug",
+      "FBFGQXSCTQ.com.cinuru.app.staging"
+    ]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "FBFGQXSCTQ.com.cinuru.app",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}

@@ -66,10 +66,6 @@ export default (config = {}) => {
     },
 
     plugins: [
-      new CopyWebpackPlugin([
-        { from: "content/manifest.json", to: "dist/manifest.json" }
-      ]),
-      
       new PhenomicLoaderFeedWebpackPlugin({
         // here you define generic metadata for your feed
         feedsOptions: {
@@ -93,6 +89,11 @@ export default (config = {}) => {
       new PhenomicLoaderSitemapWebpackPlugin({
         site_url: pkg.homepage,
       }),
+
+      new CopyWebpackPlugin([
+        "content/manifest.json",
+        "content/apple-app-site-association"
+      ]),
 
       ...config.production && [
         new webpack.optimize.UglifyJsPlugin(
