@@ -12,6 +12,7 @@
       {
         "appID": "FBFGQXSCTQ.com.cinuru.app",
         "paths": [
+          "/onboarding",
           "/discover",
           "/showtimes",
           "/incinema",
@@ -32,6 +33,7 @@
       {
         "appID": "FBFGQXSCTQ.com.cinuru.app.debug",
         "paths": [
+          "/onboarding",
          "/discover",
           "/showtimes",
           "/incinema",
@@ -52,6 +54,7 @@
       {
         "appID": "FBFGQXSCTQ.com.cinuru.app.staging",
         "paths": [
+          "/onboarding",
           "/discover",
           "/showtimes",
           "/incinema",
