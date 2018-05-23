@@ -17,6 +17,16 @@ import JobPage from './layouts/JobPage';
 
 const GOOGLE_ANALYTICS_UA = 'UA-90630835-3';
 
+// disable google analytics functionality
+const gaDisableCookieStr = `ga-disable-${GOOGLE_ANALYTICS_UA}`;
+window.gaOptout = () => {
+	document.cookie = `${gaDisableCookieStr}=true; expires=Thu 31 Dec 2099 23:59:59 UTC; path=/`;
+	window[gaDisableCookieStr] = true;
+};
+if (document.cookie.indexOf(`${gaDisableCookieStr}=true`) >= 0) {
+	window[gaDisableCookieStr] = true;
+}
+
 // generate autotrack with
 // autotrack -o content/assets/autotrack.js -p urlChangeTracker,cleanUrlTracker,outboundLinkTracker
 // see https://github.com/MoOx/phenomic/issues/428
