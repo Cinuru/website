@@ -21,7 +21,7 @@ Webseite: [www.cinuru.com](http://www.zinsbaustein.de)
 
 Weitere Informationen über die Cinuru Research GmbH (im Folgenden „Cinuru Research&quot; oder „wir&quot; oder „uns&quot;) findest du in unserem [Impressum](https://cinuru.com/impressum/).
 
-Bei Fragen und zur Ausübung deiner Rechte kannst du uns auch gerne per Email an <a href="mailto:datenschutz@cinuru.com">datenschutz@cinuru.com</a> erreichen.
+Bei Fragen und zur Ausübung deiner Rechte kannst du uns auch gerne per Email an <a onClick="function(){window.location='mailto:datenschutz@cinuru.com';};"> datenschutz@cinuru.com </a> erreichen.
 
 ## 2. Zweck, Umfang und Rechtsgrundlagen der Erhebung und Verarbeitung deiner Daten
 
@@ -185,7 +185,7 @@ Als von der Verarbeitung personenbezogener Daten betroffene Person hast du die i
 
 #### Du hast das Recht, jederzeit deine Einwilligung in die Verarbeitung deiner personenbezogenen Daten mit Wirkung für die Zukunft zu widerrufen.
 
-#### Der Widerruf kann formfrei erfolgen. Hierfür genügt eine E-Mail an <a href="mailto:datenschutz@cinuru.com">datenschutz@cinuru.com</a>. Der Widerruf der Einwilligung berührt nicht die Rechtmäßigkeit der bis zum Widerruf verarbeiteten personenbezogenen Daten.
+#### Der Widerruf kann formfrei erfolgen. Hierfür genügt eine E-Mail an <a onClick="function(){window.location='mailto:datenschutz@cinuru.com';};"> datenschutz@cinuru.com </a>. Der Widerruf der Einwilligung berührt nicht die Rechtmäßigkeit der bis zum Widerruf verarbeiteten personenbezogenen Daten.
 
 ### 6.2 RECHT AUF AUSKUNFT
 
@@ -229,7 +229,7 @@ Wurde die Verarbeitung der personenbezogenen Daten nach den o.g. Voraussetzungen
 1.  a)**auf Grundlage von Art. 6 Abs. 1 f) DS-GVO oder**
 2.  b) **zum Zwecke der Direktwerbung bzw. des Profiling erfolgt.**
 
-### Der Widerspruch kann formfrei erfolgen. Hierfür genügt eine E-Mail an <a href="mailto:datenschutz@cinuru.com">datenschutz@cinuru.com</a>.
+### Der Widerspruch kann formfrei erfolgen. Hierfür genügt eine E-Mail an <a onClick="function(){window.location='mailto:datenschutz@cinuru.com';};"> datenschutz@cinuru.com </a>.
 
 Im Falle des Widerspruchs verarbeiten wir deine personenbezogenen Daten nicht mehr. Dies gilt nicht bei einer Datenverarbeitung auf Grund von Art. 6 Abs. 1 f) DS-GVO, wenn wir zwingende schutzwürdige Gründe für die Verarbeitung nachweisen können, die deine Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient.
 
