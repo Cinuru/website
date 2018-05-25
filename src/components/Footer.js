@@ -76,6 +76,9 @@ const Footer = () => (
 					<li>
 						<Link to="/impressum">Impressum</Link>
 					</li>
+					<li>
+						<Link to="/privacy">Datenschutzerklärung</Link>
+					</li>
 				</ul>
 			</div>
 			<div className="address">
