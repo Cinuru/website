@@ -8,7 +8,6 @@ description:
    - Bekomme Spielzeiten und Filminfos Deines Kinos aufs Handy.
    - Sammle mit jedem Kinobesuch Punkte und verdiene Prämien Deines Kinos.
    - Merke dir Filme und verpasse keinen Film im Kino.
-
 callToAction: Hol dir Cinuru und werde Teil deines Kinos.
 cinemaHeader: "Cinuru findest du in ausgewählten Kinos:"
 redirectToStore: true
