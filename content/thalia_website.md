@@ -13,15 +13,6 @@ callToAction: Hol dir Cinuru und werde Teil deines Kinos.
 cinemaHeader: "Cinuru findest du in ausgewählten Kinos:"
 playStoreLink: "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.cinuru.app%26ddl%3D1%26pcampaignid%3Dweb_ddl_1"
 appStoreLink: "https://itunes.apple.com/us/app/cinuru/id1281946162?ls=1&mt=8"
-cinemas:
-   - Casino, Aschaffenburg
-   - Cinexx, Hachenburg
-   - hackesche hoefe kino, Berlin
-   - Kino am Markt, Jena
-   - Kino im Schillerhof, Jena
-   - Lumos Lichtspiele & Lounge, Nidda
-   - SCALA Programmkino, Lüneburg
-   - Thalia Programmkino, Potsdam
 feedback:
    - Du hast die App bereits?
    - Was können wir besser machen?

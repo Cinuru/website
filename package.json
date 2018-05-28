@@ -49,6 +49,7 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
+    "apollo-fetch": "^0.7.0",
     "mobile-detect": "^1.4.1",
     "polished": "^1.1.1",
     "react-icons": "^2.2.5",
