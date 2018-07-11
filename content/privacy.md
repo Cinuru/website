@@ -17,7 +17,7 @@ August-Bebel-Str. 26-53
 
 14482 Potsdam
 
-Webseite: [www.cinuru.com](http://www.zinsbaustein.de)
+Webseite: [www.cinuru.com](https://www.cinuru.com)
 
 Weitere Informationen über die Cinuru Research GmbH (im Folgenden „Cinuru Research&quot; oder „wir&quot; oder „uns&quot;) findest du in unserem [Impressum](https://cinuru.com/impressum/).
 
@@ -33,11 +33,11 @@ Wir helfen Filmschaffenden, Filmvertrieben und Kinos dabei ihr Publikum besser z
 
 Um sämtliche Services von Cinuru nutzen zu können, musst du dich registrieren. Durch deine Registrierung legst du ein Nutzerkonto bei uns an, über welches du dich einloggen kannst. Hierfür benötigen wir einen Nutzernamen, deine Emailadresse, sowie ein Passwort. Optional kannst du Alter, Geschlecht und Wohngebiet (PLZ) ergänzen, sodass wir Filmangebote für dich besser zuordnen können. Diese Daten benötigen wir, um ein Nutzerprofil für dich einzurichten und dir unsere Dienste anbieten zu können. Alternativ kannst du dich mittels Facebook Connect registrieren, vergleiche hierzu Ziffer 4.1.
 
-Dein Nutzerprofil wird in unseren Datenbanken gespeichert diese befinden sich auf in Deutschland befindlichen Servern des Hosting Providers Amazon Web Services (AWS) (Siehe 4.8).
+Dein Nutzerprofil wird in unseren Datenbanken gespeichert diese befinden sich auf in Deutschland befindlichen Servern des Hosting Providers Amazon Web Services (AWS) (Siehe 4.9).
 
 ### 2.2 Newsletter
 
-Du hast die Möglichkeit dich in der App für den allgemeinen Cinuru Newsletter anzumelden. Für den Newsletter-Versand nutzen wir den Dienst Amazon Simple Email Service (vgl. 4.8). Mit dem Newsletter erhältst du Informationen über die Angebote deines Kinos sowie unsere neuesten Updates. Den Newsletter kannst du jederzeit mit Wirkung für die Zukunft abbestellen. Informationen dazu sind in jedem Newsletter enthalten.
+Du hast die Möglichkeit dich in der App für den allgemeinen Cinuru Newsletter anzumelden. Für den Newsletter-Versand nutzen wir den Dienst Amazon Simple Email Service (vgl. 4.9). Mit dem Newsletter erhältst du Informationen über die Angebote deines Kinos sowie unsere neuesten Updates. Den Newsletter kannst du jederzeit mit Wirkung für die Zukunft abbestellen. Informationen dazu sind in jedem Newsletter enthalten.
 
 Bestimmte Kinos ermöglich es dir auch sich über die App für deren Kinonewsletter anzumelden. Diese Kinos übernehmen den Newsletter-Versand selbst. Entscheidest du dich für den Newsletter, stimmst du mit deiner Anmeldung zu, dass wir deine Emailadresse an dein Kino weitergeben. Du wirst in diesem Fall gesondert auf die Datenweitergabe hingewiesen. Die Weitergabe erfolgt damit auf Grundlage von Art. 6 Abs. 1 a) DS-GVO.
 
@@ -57,7 +57,7 @@ Die App fragt dich nach der Erlaubnis deinen Standort zu bestimmen, diese Inform
 
 ### 2.5 ZUGRIFFSBERECHTIGUNG MIKROFON
 
-Die App fragt dich nach der Erlaubnis, dein Mikrofon zu verwenden. Diese Funktion ermöglicht die Trailerbewertung im Kinosaal. Die Mikrofonaufnahmen werden nur zum Zwecke der Erkennung des Trailers (Audio Finger Printing) auf deinem Handy verarbeitet und unverzüglich gelöscht. Um die Trailererkennung kontinuierlich zu verbessern, bitten wir einzelne Nutzer um Übertragung einzelner Audioaufnahmen. Dieses kann ohne Einschränkung der App-Funktionalitäten abgelehnt werden. Stimmst du dieser Übertragung zu, wird der aufgenommene Audiomitschnitt auf unsere Server (siehe 4.8 und 4.9) übertragen und von unseren Entwicklern zur Verbesserung der Trailererkennung verwendet.
+Die App fragt dich nach der Erlaubnis, dein Mikrofon zu verwenden. Diese Funktion ermöglicht die Trailerbewertung im Kinosaal. Die Mikrofonaufnahmen werden nur zum Zwecke der Erkennung des Trailers (Audio Finger Printing) auf deinem Handy verarbeitet und unverzüglich gelöscht. Um die Trailererkennung kontinuierlich zu verbessern, bitten wir einzelne Nutzer um Übertragung einzelner Audioaufnahmen. Dieses kann ohne Einschränkung der App-Funktionalitäten abgelehnt werden. Stimmst du dieser Übertragung zu, wird der aufgenommene Audiomitschnitt auf unsere Server (siehe 4.9 und 4.10) übertragen und von unseren Entwicklern zur Verbesserung der Trailererkennung verwendet.
 
 ### 2.6 ZUGRIFFSBERECHTIGUNG KAMERA
 
@@ -133,13 +133,17 @@ Cinuru verwendet das Produkt Google Maps von Google (vgl. 4.2) zur Darstellung e
 
 Weitere Informationen findest du in den [Nutzungsbedingungen](http://www.google.com/intl/de_de/help/terms_maps.html) von Google Maps und in Googles [Datenschutzhinweisen](https://policies.google.com/privacy?hl=de).
 
-### 4.4 APPLE KARTEN
+### 4.4 GOOGLE FIREBASE
+
+Ferner nutzen wir den Service Firebase von Google (vgl. 4.2) zum Senden von Push-Mitteilungen an die Cinuru App. Die entsprechenden Datenschutzerklärungen findest du [hier](https://cloud.google.com/terms/data-processing-terms), [hier](https://developers.google.com/terms/api-services-user-data-policy) und [hier](https://policies.google.com/privacy).
+
+### 4.5 APPLE KARTEN
 
 Unter iOS verwendet Cinuru das Produkt Apple Karten der Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA (im Folgenden „Apple&quot;) für die Darstellung einer interaktiven Karte. Durch die Nutzung von Apple Karten können Informationen über die Benutzung der App einschließlich deiner IP-Adresse und der im Rahmen der Routenplanerfunktion eingegebenen (Start-) Adresse an Apple in den USA übertragen werden.
 
 Weitere Informationen über Apple Karten findest du in den [Nutzungsbedingungen](https://www.apple.com/legal/internet-services/maps/terms-de.html) und in Apples [Datenschutzhinweisen](https://www.apple.com/de/privacy/).
 
-### 4.5 THE MOVIE DB
+### 4.6 THE MOVIE DB
 
 Cinuru verwendet Bilddateien von [www.themoviedb.org](http://www.themoviedb.org) u.a. für die Personenbilder (Schauspieler, Regie, Drehbuch). Bei der Verwendung der App werden diese Bilder direkt von [www.themoviedb.org](http://www.themoviedb.org) geladen und somit deine IP übertragen.
 
@@ -147,17 +151,17 @@ Die Webseite [www.themoviedb.org](http://www.themoviedb.org) wird von Fanhatten.
 
 Weitere Informationen kannst du den [Nutzungsbedingungen](https://www.themoviedb.org/terms-of-use) und der [Datenschutzerklärung](https://www.themoviedb.org/privacy-policy) von themoviedb.org entnehmen.
 
-### 4.6 YOUTUBE
+### 4.7 YOUTUBE
 
 Die Trailer, welche dir in Cinuru angezeigt werden, stammen von YouTube. Zur Einbindung nutzen wir Plug-ins der YouTube LLC, 901 Cherry Ave., San Bruno, CA 94066, USA (im Folgenden „YouTube&quot;) einer Tochtergesellschaft von Google (vgl. 4.2). Wenn Du dir einen Trailer ansiehst, wird eine Verbindung zu den Servern von YouTube hergestellt und automatisiert erhobene Daten durch YouTube bzw. Google erfasst und bearbeitet (die Angemessenheit des Datenschutzniveaus ist gewährleistet siehe 4.2). Weitere Informationen zum Umgang von Nutzerdaten findest du in der [Datenschutzerklärung von YouTube](https://www.google.de/intl/de/policies/privacy).
 
-### 4.7 MICROSOFT
+### 4.8 MICROSOFT
 
 Um Cinuru stetig verbessern zu können und Reports zu erhalten, wenn es Probleme bei der Nutzung der App gibt, verwenden wir den Service Microsoft Visual Studio App Center („App Center&quot;) der Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399, USA (im Folgenden „Microsoft&quot;). Durch die Nutzung von App Center können automatisiert erhobene Daten über die Benutzung der App einschließlich deiner IP-Adresse an Microsoft in den USA übertragen werden. Microsoft ist unter dem [EU-US-Privacy Shield](https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/eu-us-privacy-shield_en) [zertifiziert](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active), so dass die rechtlichen Voraussetzungen für die Angemessenheit des Datenschutzniveaus gemäß Art. 45 DS-GVO gegeben sind.
 
 Weitere Informationen findest du in den Nutzungsbedingungen und in der [Datenschutzerklärung](https://privacy.microsoft.com/de-de/privacy) von Microsoft.
 
-### 4.8 AMAZON WEB SERVICES
+### 4.9 AMAZON WEB SERVICES
 
 Für das Hosting der Datenbankinhalte nutzen wir den Service Amazon Relational Database Service (RDS) der Amazon Web Services Inc., 410 Terry Avenue North, Seattle WA 98109, USA (im Folgenden &quot;AWS&quot;). Die Daten werden automatisch verschlüsselt und ausschließlich in einem deutschen Rechenzentrum (Frankfurt/Main) gespeichert, das nach ISO 27001, 27017 und 2018 sowie PCI DSS Level 1 zertifiziert ist.
 
@@ -165,7 +169,7 @@ Zum Versand von E-Mails, z.B. nach der Registrierung in der App oder zum Newslet
 
 Nähere Informationen zu Amazon Simple Email Service, AWS und zum Datenschutz findest du unter [https://aws.amazon.com/de/ses/](https://aws.amazon.com/de/ses/) sowie in den [Datenschutzhinweisen](http://aws.amazon.com/de/privacy/)
 
-### 4.9 STRATO
+### 4.10 STRATO
 
 Zur Datenverarbeitung und zum Bereitstellen unserer API sowie als Webserver nutzen wir Server der Firma STRATO AG, Pascalstraße 10, 10587 Berlin (im Folgenden „Strato&quot;).
 
@@ -259,4 +263,4 @@ E-Mail: Poststelle@LDA.Brandenburg.de
 
 Wir behalten uns vor, diese Datenschutzerklärung jederzeit im Rahmen des gesetzlich Möglichen zu ändern. Die aktuelle Fassung der Datenschutzerklärung ist stets unter [www.cinuru.com/privacy](http://www.cinuru.com/privacy) abrufbar.
 
-Stand: 24. Mai 2018
+Stand: 27. Juni 2018
