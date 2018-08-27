@@ -13,6 +13,9 @@ August-Bebel-Str. 26-53 <br>
 Martina Berger <br>
 Geschäftsführerin
 
+Jannis Funk <br>
+Geschäftsführer
+
 **Registereintrag:** <br>
 Eintragung im Handelsregister. <br>
 Registergericht: Potsdam <br>
