@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "proptypes";
 import styled from "styled-components";
 import Helmet from "react-helmet";
+import Intercom from "react-intercom";
 
 import CinemaList from "../components/CinemaList";
 import Container from "./Container";
@@ -119,7 +120,11 @@ const HomePage = ({
       <Wrapper>
         <img className="logo" src="/assets/logoVertical.svg" alt="Cinuru" />
         <p className="tagline">{tagline}</p>
-        <div>{description.map((text, i) => <p key={i}>{text}</p>)}</div>
+        <div>
+          {description.map((text, i) => (
+            <p key={i}>{text}</p>
+          ))}
+        </div>
         <img className="mascot" src={mascotImg} alt="" />
         <p className="title">{callToAction}</p>
         <div className="store-links">
@@ -136,7 +141,9 @@ const HomePage = ({
           <p>
             <strong>{feedback[0]}</strong>
           </p>
-          {feedback.splice(1).map((text, i) => <p key={i}>{text}</p>)}
+          {feedback.splice(1).map((text, i) => (
+            <p key={i}>{text}</p>
+          ))}
           <span
             className="button"
             onClick={() => {
@@ -148,6 +155,7 @@ const HomePage = ({
         </div>
         <CinemaList title={cinemaHeader} />
       </Wrapper>
+      <Intercom appID="fl8b540h" />
     </Container>
   );
 };
