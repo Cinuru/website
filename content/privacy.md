@@ -177,6 +177,16 @@ Diese Server nutzen wir, um jegliche externe Informationen in die App zu laden, 
 
 Weitere Informationen findest du in den Nutzungsbedingungen und in der [Datenschutzerklärung](https://www.strato.de/datenschutz/) von Strato.
 
+### 4.11 INTERCOM
+
+Wir wollen immer und einfach für dich erreichbar sein, deswegen bieten wir dir die Kommunikation über Dienste der Firma Intercom Inc. mit Sitz in 2nd Street San Francisco, CA 94105, USA (im Folgenden „Intercom&quot;). 
+
+Der Service dient der Kommuikation via Email oder Livechat zum Support und zur Verbesserung des Nutzungserlebnisses von Cinuru. Der Dienst verarbeiten dazu temporär und verschlüsselt deinen Namen, deine Emailadresse sowie die Informationen und Nachrichten, die du uns schickst. Im Falle der Nutzung des Livechats sehen wir, ob und wann du eine Nachricht von uns gelesen hast. So wissen wir, wie wir dich am besten erreichen können. 
+
+Intercom ist unter dem [EU-US-Privacy Shield](https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/eu-us-privacy-shield_en) [zertifiziert](https://www.privacyshield.gov/participant?id=a2zt0000000TNQvAAO&status=Active), so dass die rechtlichen Voraussetzungen für die Angemessenheit des Datenschutzniveaus gemäß Art. 45 DS-GVO gegeben sind.
+
+Weitere Informationen findest du in den Nutzungsbedingungen und der Datenschutzerklärung von [Intercom](https://www.intercom.com/de/terms-and-policies).
+
 ## 5. Dauer der Speicherung und Löschung deiner Daten
 
 Soweit deine Daten für die vorgenannten Zwecke nicht mehr erforderlich sind, werden sie gelöscht. Inaktive Profile werden nach einer Dauer von 3 Jahren automatisch gelöscht. Wenn du deinen Nutzer-Account löschen lassen möchtest, kannst uns per E-Mail kontaktieren (vgl. Ziffer 1) und dein Profil wird vollständig und endgültig gelöscht. Soweit Daten aus gesetzlichen Gründen aufbewahrt werden müssen, werden diese gesperrt. Die Daten stehen einer weiteren Verwendung dann nicht mehr zur Verfügung.
