@@ -273,4 +273,4 @@ E-Mail: Poststelle@LDA.Brandenburg.de
 
 Wir behalten uns vor, diese Datenschutzerklärung jederzeit im Rahmen des gesetzlich Möglichen zu ändern. Die aktuelle Fassung der Datenschutzerklärung ist stets unter [www.cinuru.com/privacy](http://www.cinuru.com/privacy) abrufbar.
 
-Stand: 27. Juni 2018
+Stand: 31. August 2018
